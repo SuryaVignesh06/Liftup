@@ -22,7 +22,7 @@
 
   <!-- ═══════════ 1. HERO ═══════════ -->
   <section class="hero" id="top">
-    <div class="tag rev">Cohort 01 — Now Enrolling</div>
+    <div id="meteors-container" class="meteors-container"></div>
     <h1 class="hero-headline rev d1">
       Experience <em>Corporate Life</em><br>Before Graduation.
     </h1>
@@ -31,45 +31,44 @@
     </p>
     <p class="hero-sup rev d3">Built by Orionac. Trusted by institutions. Designed for the real world.</p>
     <div class="cta-group hero-ctas rev d4">
-      <a href="#apply" class="btn btn-dark">Apply as Student</a>
+      <a href="#apply" class="btn-anim" style="--clr: var(--text)">
+        <span class="btn-anim__icon-wrapper">
+          <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-anim__icon-svg" width="10">
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"></path>
+          </svg>
+          <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+            class="btn-anim__icon-svg btn-anim__icon-svg--copy">
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"></path>
+          </svg>
+        </span>
+        Apply as Student
+      </a>
       <a href="#apply" class="btn btn-outline">Apply as College</a>
       <a href="#apply" class="btn btn-outline">Apply as Founder</a>
     </div>
 
     <div class="marquee-outer rev d5">
       <div class="marquee-track">
-        <div class="m-card">
-          <div class="m-card-big">15</div>
-          <div class="m-card-lbl">Day intensive program</div><span class="m-card-tag">Sprint-based</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">4+</div>
-          <div class="m-card-lbl">Engineering tracks</div><span class="m-card-tag">AI · Web · Data</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">20+</div>
-          <div class="m-card-lbl">Industry tools</div><span class="m-card-tag">Real stack</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">3</div>
-          <div class="m-card-lbl">Cohort phases</div><span class="m-card-tag">Structured</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">4</div>
-          <div class="m-card-lbl">Buildathon phases</div><span class="m-card-tag">Grand Finale</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">100%</div>
-          <div class="m-card-lbl">Industry-simulated</div><span class="m-card-tag">Not a bootcamp</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">Day 1</div>
-          <div class="m-card-lbl">Ready graduates</div><span class="m-card-tag">Orionac-certified</span>
-        </div>
-        <div class="m-card">
-          <div class="m-card-big">Dr.</div>
-          <div class="m-card-lbl">Ganesh — Lead Mentor</div><span class="m-card-tag">Industry expert</span>
-        </div>
+        <div class="m-pill">15-Day Intensive Program</div>
+        <div class="m-pill">Sprint-based</div>
+        <div class="m-pill">4+ Engineering Tracks</div>
+        <div class="m-pill">AI · Web · Data</div>
+        <div class="m-pill">20+ Industry Tools</div>
+        <div class="m-pill">Real Stack</div>
+        <div class="m-pill">3 Cohort Phases</div>
+        <div class="m-pill">Structured</div>
+        <div class="m-pill">4 Buildathon Phases</div>
+        <div class="m-pill">Grand Finale</div>
+        <div class="m-pill">100% Industry-Simulated</div>
+        <div class="m-pill">Not a Bootcamp</div>
+        <div class="m-pill">Day 1 Ready Graduates</div>
+        <div class="m-pill">Orionac-Certified</div>
+        <div class="m-pill">Dr. Ganesh — Lead Mentor</div>
+        <div class="m-pill">Industry Expert</div>
       </div>
     </div>
   </section>
@@ -78,58 +77,43 @@
   <!-- ═══════════ 2. PAIN SECTION ═══════════ -->
   <section class="pain" id="pain">
     <div class="container">
-      <span class="section-label"><span class="tag tag-dk rev">The Academic–Industry Disconnect</span></span>
-      <h2 class="h2 rev d1">Your Degree Doesn't Prepare You<br>for Day One.</h2>
-
-      <div class="pain-stat rev d2">
-        <strong>Only 1 in 4 engineering graduates in India gets placed within 6 months of graduation.</strong>
-        <p>The gap isn't talent — it's exposure.</p>
+      <div class="section-label" style="justify-content: center;">
+        <span class="section-badge rev d1">The Academic—Industry Disconnect</span>
       </div>
+      <h2 class="h2 rev d2">Your Degree Doesn't Prepare You<br>for <em>Day One.</em></h2>
 
       <div class="pain-cards">
         <div class="p-card rev d1">
-          <div class="p-card-num">1</div>
-          <div class="p-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-            </svg>
-          </div>
+          <span class="p-card-num">01</span>
           <h3>"You Cleared the Exam. You Froze in the Interview."</h3>
-          <p>You knew the theory. But when they asked you to walk through a real product decision — there was nothing to
-            say. No project. No experience. No answer.</p>
+          <p class="small">You knew the theory. But when they asked you to walk through a real product decision —
+            there was nothing to say. No project. No experience. No answer.</p>
         </div>
         <div class="p-card rev d2">
-          <div class="p-card-num">2</div>
-          <div class="p-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-              <line x1="16" y1="2" x2="16" y2="6" />
-              <line x1="8" y1="2" x2="8" y2="6" />
-              <line x1="3" y1="10" x2="21" y2="10" />
-            </svg>
-          </div>
+          <span class="p-card-num">02</span>
           <h3>"Day One at Your Job Will Not Look Like Your Classroom."</h3>
-          <p>No assignments. No syllabus. Just a Jira board, a standup in 10 minutes, and a sprint task with your name
-            on it. Most freshers take 3 months just to catch up.</p>
+          <p class="small">No assignments. No syllabus. Just a Jira board, a standup in 10 minutes, and a sprint task
+            with your name on it. Most freshers take 3 months just to catch up.</p>
         </div>
         <div class="p-card rev d3">
-          <div class="p-card-num">3</div>
-          <div class="p-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="16 18 22 12 16 6" />
-              <polyline points="8 6 2 12 8 18" />
-            </svg>
-          </div>
+          <span class="p-card-num">03</span>
           <h3>"Your College Project Didn't Impress Them. Here's Why."</h3>
-          <p>It had no version control. No documentation. No QA. No review cycle. Companies don't care that you built it
-            — they care how you built it.</p>
+          <p class="small">It had no version control. No documentation. No QA. No review cycle. Companies don't care
+            that you built it — they care how you built it.</p>
         </div>
       </div>
 
       <div class="pain-bridge rev d4">
         <p>"You can't fix four years of college in one interview. But you can fix it in 15 days."</p>
-        <a href="#liftup" class="btn btn-accent">See the Solution</a>
+        <a href="#liftup" class="btn-green">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+          See the Solution
+        </a>
       </div>
     </div>
   </section>
@@ -139,61 +123,67 @@
   <section class="whatis" id="liftup">
     <div class="container">
       <div class="whatis-inner">
-        <div>
-          <span class="section-label"><span class="tag rev">The Solution</span></span>
-          <h2 class="h2 rev d1">LiftUp is Not a Course.<br>It's a <em>Corporate Simulation.</em></h2>
-          <p class="body-text rev d2" style="margin-top:1rem">
+        <div class="whatis-intro">
+          <div class="section-label">
+            <span class="section-badge rev d1">The Solution</span>
+          </div>
+          <h2 class="h2 rev d2">LiftUp is Not a Course.<br>It's a <em>Corporate Simulation.</em></h2>
+          <p class="body-text rev d3" style="margin: 1.5rem auto 0; max-width: 800px;">
             A fully simulated product development experience where students are assigned real roles, handed real problem
             statements, and evaluated exactly the way employees are — with standups, sprints, reviews, and appraisals.
-            LiftUp runs in two stages: the 15-Day Cohort and the Grand Buildathon.
           </p>
+        </div>
 
-          <div class="steps rev d3">
-            <div class="step">
-              <div class="step-dot">1</div>
-              <div class="step-body">
-                <h4>Join the 15-Day Corporate Simulation</h4>
+        <div class="simulation-path rev d4">
+          <div class="path-line"></div>
+          <div class="path-steps">
+            <div class="path-step">
+              <div class="path-content">
+                <h4>15-Day Simulation</h4>
                 <p>Work inside a simulated tech company with real roles, daily standups, sprint tasks, and product
                   reviews.</p>
               </div>
+              <div class="path-dot"></div>
+              <span class="path-num">01</span>
             </div>
-            <div class="step">
-              <div class="step-dot">2</div>
-              <div class="step-body">
-                <h4>Build Real Products in Team Roles</h4>
-                <p>Develop two product projects using industry tools and workflows. Top performers may receive startup
-                  internship opportunities through the LiftUp network.</p>
+            <div class="path-step">
+              <span class="path-num">02</span>
+              <div class="path-dot"></div>
+              <div class="path-content">
+                <h4>Build Real Products</h4>
+                <p>Develop projects using industry tools. Top performers may receive startup internship opportunities.
+                </p>
               </div>
             </div>
-            <div class="step">
-              <div class="step-dot">3</div>
-              <div class="step-body">
-                <h4>Enter the National Buildathon</h4>
-                <p>Compete in India's largest student buildathon — pitching products to founders, engineers, and
-                  industry judges.</p>
+            <div class="path-step">
+              <div class="path-content">
+                <h4>National Buildathon</h4>
+                <p>Compete in India's largest student buildathon — pitching to founders, engineers & judges.</p>
               </div>
+              <div class="path-dot"></div>
+              <span class="path-num">03</span>
             </div>
           </div>
         </div>
 
-        <div>
-          <div class="founder-cards rev d2">
-            <div class="founder-card">
-              <div class="founder-avatar">R</div>
-              <div>
-                <h4>Founder's Word — Rishi</h4>
-                <div class="designation">Founder, LiftUp / Orionac</div>
-                <p>Placeholder — Rishi's message about why LiftUp was built, the problem he saw, and what he wants
-                  students to walk away with.</p>
-              </div>
+        <div class="founder-cards rev d5">
+          <div class="founder-card">
+            <div class="founder-avatar"><img src="rishi.png" alt="Rishi"
+                style="width:100%; height:100%; border-radius:inherit; object-fit:cover;"></div>
+            <div>
+              <h4>Founder's Word</h4>
+              <div class="designation">Rishi — Founder, LiftUp / Orionac</div>
+              <p>Placeholder — Rishi's message about why LiftUp was built, the problem he saw, and what he wants
+                students to walk away with.</p>
             </div>
-            <div class="founder-card">
-              <div class="founder-avatar">S</div>
-              <div>
-                <h4>From the Desk of Sudarshan</h4>
-                <div class="designation">Designation — TBD</div>
-                <p>Placeholder — Sudarshan's message, perspective, or role within LiftUp to be added here.</p>
-              </div>
+          </div>
+          <div class="founder-card">
+            <div class="founder-avatar"><img src="review1.jpeg" alt="Sudarshan"
+                style="width:100%; height:100%; border-radius:inherit; object-fit:cover;"></div>
+            <div>
+              <h4>From the Desk of Sudarshan</h4>
+              <div class="designation">Sudarshan — Designation TBD</div>
+              <p>Placeholder — Sudarshan's message, perspective, or role within LiftUp to be added here.</p>
             </div>
           </div>
         </div>
@@ -207,7 +197,7 @@
     <div class="container">
       <div class="why-inner">
         <div>
-          <span class="section-label"><span class="tag rev">Why Orionac</span></span>
+          <span class="section-label"><span class="section-badge rev">Why Orionac</span></span>
           <h2 class="h2 rev d1">We're Not an EdTech Company.<br>We're a <em>Technology Company</em> That Trains.</h2>
           <blockquote class="why-quote rev d2">
             "LiftUp was not designed by educators. It was designed by engineers who build products."
@@ -220,52 +210,25 @@
           <p class="why-close rev d4">When a tech company builds a training program, it doesn't look like a course. It
             looks like a job.</p>
         </div>
-        <div class="pillars">
+        <div class="pillars-col">
           <div class="pillar rev d1">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                <line x1="9" y1="9" x2="9.01" y2="9" />
-                <line x1="15" y1="9" x2="15.01" y2="9" />
-              </svg>
-            </div>
             <h4>R&amp;D at the Core</h4>
             <p>Orionac operates as a technology and research company. LiftUp is built from the inside of that
               environment, not borrowed from a curriculum.</p>
           </div>
           <div class="pillar rev d2">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
-            </div>
             <h4>Global Support Ecosystems</h4>
             <p>Backed by cloud and innovation programs that power real startups and enterprises worldwide.</p>
           </div>
           <div class="pillar rev d3">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-            </div>
             <h4>Startup Ecosystem Connections</h4>
-            <p>Direct links to founders, early-stage startups, and hiring pipelines that students can access through the
-              program.</p>
+            <p>Direct links to founders, early-stage startups, and hiring pipelines that students can access through
+              the program.</p>
           </div>
           <div class="pillar rev d4">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-              </svg>
-            </div>
             <h4>Enterprise-Grade Simulation</h4>
-            <p>The cohort isn't inspired by corporate life. It replicates it — tools, roles, reviews, appraisals, and
-              all.</p>
+            <p>The cohort isn't inspired by corporate life. It replicates it — tools, roles, reviews, appraisals,
+              and all.</p>
           </div>
         </div>
       </div>
@@ -276,7 +239,7 @@
   <!-- ═══════════ 5a. COHORT STRUCTURE ═══════════ -->
   <section class="cohort-structure section" id="cohort">
     <div class="container">
-      <span class="section-label"><span class="tag rev">Inside the Cohort</span></span>
+      <span class="section-label"><span class="section-badge rev">Inside the Cohort</span></span>
       <h2 class="h2 rev d1">15 Days. 3 Phases.<br>One <em>Corporate Experience.</em></h2>
 
       <div class="phases-grid" style="margin-top:3rem">
@@ -317,7 +280,7 @@
 
       <!-- ── Tracks ── -->
       <div style="margin-top:5rem">
-        <span class="section-label"><span class="tag rev">Engineering Tracks</span></span>
+        <span class="section-label"><span class="section-badge rev">Engineering Tracks</span></span>
         <h2 class="h2 rev d1">One Program. Four <em>Engineering Tracks.</em></h2>
         <p class="body-text rev d2" style="margin-top:.75rem">Colleges choose the track that fits their students best.
           Every track runs inside the same 15-day corporate simulation — same sprint structure, same evaluation,
@@ -359,7 +322,7 @@
   <!-- ═══════════ 5b. REVIEW SECTION ═══════════ -->
   <section class="review-section" id="review">
     <div class="container">
-      <span class="section-label"><span class="tag rev">Industry Validation</span></span>
+      <span class="section-label"><span class="section-badge rev">Industry Validation</span></span>
       <h2 class="h2 rev d1">What <em>Hiring Managers</em> Say.</h2>
 
       <div class="review-card rev d2">
@@ -375,9 +338,10 @@
           <p style="font-size:.875rem;color:var(--text-2);font-weight:500;margin-bottom:1rem">Hiring Partner /
             Engineering Leader</p>
           <blockquote class="review-quote">
-            "Rishi and the Orion team have been a solid pipeline for us, bringing in pre-vetted, industry-ready talent
-            from colleges most companies overlook. The training they put candidates through before we even see them
-            saves us real time and effort in hiring. Good to have them in our corner."
+            "Rishi and the Orionac team have built a consistent talent pipeline for us, identifying and cultivating
+            industry-ready candidates from emerging institutions. Their rigorous industry-readiness curriculum
+            significantly streamlines our technical onboarding, saving us months of lead-time. They are an invaluable
+            strategic partner in our engineering growth."
           </blockquote>
         </div>
       </div>
@@ -388,63 +352,180 @@
   <!-- ═══════════ 5c. TOOLS ═══════════ -->
   <section class="tools-section" id="tools">
     <div class="container">
-      <span class="section-label"><span class="tag rev">Tools Ecosystem</span></span>
+      <span class="section-label"><span class="section-badge rev">Tools Ecosystem</span></span>
       <h2 class="h2 rev d1">20+ Industry Tools.<br>Used From <em>Day One.</em></h2>
       <p class="tools-subtitle rev d2">Students use the same tools used inside modern tech companies.</p>
 
-      <div class="tools-cats rev d3">
-        <div class="tool-cat">
-          <div class="tool-cat-name">Project Management</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Jira</span>
-            <span class="tool-pill">Notion</span>
-            <span class="tool-pill">Trello</span>
-            <span class="tool-pill">Linear</span>
+      <div class="tools-marquee-container rev d3">
+        <!-- Row 1 -->
+        <div class="t-marquee-track">
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#0052CC">
+                <path
+                  d="M11.53 2c0 2.4 1.97 4.35 4.39 4.35H22V2h-10.47zM2.41 12.88c0 2.4 1.97 4.34 4.39 4.34H12.8V12.88H2.41zM11.53 22V11.12H2v10.88h9.53zM12.8 6.35V17.22H22.33V6.35H12.8z" />
+              </svg></span>
+            <span class="tool-name">Jira</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#FFFFFF">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg></span>
+            <span class="tool-name">GitHub</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#FFFFFF">
+                <path
+                  d="M4.17 3.01C3.25 3 2 3.41 2 5.03v13.91c0 1.54 1.17 2.06 2.11 2.05L19.29 21c1.23 0 2.71-.62 2.71-2.43V5.41C22 3.86 21 3 19.34 3H4.17zm.3 2.1h13.93c1 .03 1.53.51 1.53 1.38v11.19c0 .71-.24 1.23-1.07 1.23H5.16c-.73 0-1.07-.38-1.07-1.05V6.44c0-.85.49-1.32 1.38-1.33zM7.4 7.23c-.3 0-.5.23-.5.58v8.46c0 .32.2.53.5.53h.93c.24 0 .42-.16.42-.43V10.1l3.54 6.2c.09.11.23.18.39.18h.8c.28 0 .48-.2.48-.52V7.79c0-.32-.2-.56-.47-.56h-.9c-.27 0-.46.2-.46.52v6.06l-3.39-5.96a.545.545 0 0 0-.44-.22H7.4z" />
+              </svg></span>
+            <span class="tool-name">Notion</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24">
+                <path fill="#F24E1E" d="M7 0C4.79086 0 3 1.79086 3 4C3 6.20914 4.79086 8 7 8H11V0H7Z" />
+                <path fill="#FF7262" d="M13 0H17C19.2091 0 21 1.79086 21 4C21 6.20914 19.2091 8 17 8H13V0Z" />
+                <path fill="#A259FF" d="M13 8H17C19.2091 8 21 9.79086 21 12C21 14.2091 19.2091 16 17 16H13V8Z" />
+                <path fill="#1ABCFE" d="M7 8H11V16H7C4.79086 16 3 14.2091 3 12C3 9.79086 4.79086 8 7 8Z" />
+                <path fill="#0AC17E"
+                  d="M7 16C4.79086 16 3 17.7909 3 20C3 22.2091 4.79086 24 7 24C9.20914 24 11 22.2091 11 20V16H7Z" />
+              </svg></span>
+            <span class="tool-name">Figma</span>
+          </div>
+          <!-- Triplicate -->
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#0052CC">
+                <path
+                  d="M11.53 2c0 2.4 1.97 4.35 4.39 4.35H22V2h-10.47zM2.41 12.88c0 2.4 1.97 4.34 4.39 4.34H12.8V12.88H2.41zM11.53 22V11.12H2v10.88h9.53zM12.8 6.35V17.22H22.33V6.35H12.8z" />
+              </svg></span>
+            <span class="tool-name">Jira</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#FFFFFF">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg></span>
+            <span class="tool-name">GitHub</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="#FFFFFF">
+                <path
+                  d="M4.17 3.01C3.25 3 2 3.41 2 5.03v13.91c0 1.54 1.17 2.06 2.11 2.05L19.29 21c1.23 0 2.71-.62 2.71-2.43V5.41C22 3.86 21 3 19.34 3H4.17zm.3 2.1h13.93c1 .03 1.53.51 1.53 1.38v11.19c0 .71-.24 1.23-1.07 1.23H5.16c-.73 0-1.07-.38-1.07-1.05V6.44c0-.85.49-1.32 1.38-1.33zM7.4 7.23c-.3 0-.5.23-.5.58v8.46c0 .32.2.53.5.53h.93c.24 0 .42-.16.42-.43V10.1l3.54 6.2c.09.11.23.18.39.18h.8c.28 0 .48-.2.48-.52V7.79c0-.32-.2-.56-.47-.56h-.9c-.27 0-.46.2-.46.52v6.06l-3.39-5.96a.545.545 0 0 0-.44-.22H7.4z" />
+              </svg></span>
+            <span class="tool-name">Notion</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24">
+                <path fill="#F24E1E" d="M7 0C4.79086 0 3 1.79086 3 4C3 6.20914 4.79086 8 7 8H11V0H7Z" />
+                <path fill="#FF7262" d="M13 0H17C19.2091 0 21 1.79086 21 4C21 6.20914 19.2091 8 17 8H13V0Z" />
+                <path fill="#A259FF" d="M13 8H17C19.2091 8 21 9.79086 21 12C21 14.2091 19.2091 16 17 16H13V8Z" />
+                <path fill="#1ABCFE" d="M7 8H11V16H7C4.79086 16 3 14.2091 3 12C3 9.79086 4.79086 8 7 8Z" />
+                <path fill="#0AC17E"
+                  d="M7 16C4.79086 16 3 17.7909 3 20C3 22.2091 4.79086 24 7 24C9.20914 24 11 22.2091 11 20V16H7Z" />
+              </svg></span>
+            <span class="tool-name">Figma</span>
           </div>
         </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Version Control</div>
-          <div class="tool-pills">
-            <span class="tool-pill">GitHub</span>
-            <span class="tool-pill">GitLab</span>
+
+        <!-- Row 2 -->
+        <div class="t-marquee-track rev">
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 5.5v3h3a1.5 1.5 0 0 0 0-3h-3z"></path>
+                <path d="M14.5 18.5v-3h3a1.5 1.5 0 0 0 0 3h-3z"></path>
+                <path d="M9.5 5.5v3h-3a1.5 1.5 0 0 0 0-3h3z"></path>
+                <path d="M9.5 18.5v-3h-3a1.5 1.5 0 0 0 0 3h3z"></path>
+                <path d="M14.5 14.5v-5a1.5 1.5 0 0 0-3 0v5a1.5 1.5 0 0 0 3 0z"></path>
+                <path d="M5.5 14.5h5a1.5 1.5 0 0 0 0-3h-5a1.5 1.5 0 0 0 0 3z"></path>
+              </svg></span>
+            <span class="tool-name">Slack</span>
           </div>
-        </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Communication</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Slack</span>
-            <span class="tool-pill">Discord</span>
-            <span class="tool-pill">Google Meet</span>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L2 21H22L12 2Z"></path>
+              </svg></span>
+            <span class="tool-name">Vercel</span>
           </div>
-        </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Documentation</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Confluence</span>
-            <span class="tool-pill">Notion</span>
-            <span class="tool-pill">Google Docs</span>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.066.066 0 0 0-.032.027A19.96 19.96 0 0 0 1.134 16.48a.066.066 0 0 0 .02.046c3.279 2.42 6.425 3.908 9.513 4.88.07.022.146-.004.185-.062a14.28 14.28 0 0 0 1.942-3.17.068.068 0 0 0-.037-.091c-1.018-.387-2.001-.84-2.923-1.37a.068.068 0 0 1-.007-.113c.205-.154.406-.318.598-.487a.07.07 0 0 1 .074-.01c6.191 2.82 12.921 2.82 19.055.01a.069.069 0 0 1 .073.01c.19 0 .393.333.597.487a.068.068 0 0 1-.007.113c-.929.53-1.916.983-2.934 1.37a.068.068 0 0 0-.036.091 14.24 14.24 0 0 0 1.933 3.17.067.067 0 0 0 .185.062c3.102-.979 6.25-2.467 9.535-4.88a.06.06 0 0 0 .02-.046 20.005 20.005 0 0 0-2.502-12.083.064.064 0 0 0-.036-.027ZM8.02 14.075c-1.196 0-2.18-1.076-2.18-2.395 0-1.32.966-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.966 2.395-2.18 2.395Zm7.96 0c-1.195 0-2.179-1.076-2.179-2.395 0-1.32.967-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.974 2.395-2.181 2.395Z" />
+              </svg></span>
+            <span class="tool-name">Discord</span>
           </div>
-        </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Deployment</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Vercel</span>
-            <span class="tool-pill">Railway</span>
-            <span class="tool-pill">AWS (basics)</span>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg></span>
+            <span class="tool-name">VS Code</span>
           </div>
-        </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Design</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Figma</span>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 5.5v3h3a1.5 1.5 0 0 0 0-3h-3z"></path>
+                <path d="M14.5 18.5v-3h3a1.5 1.5 0 0 0 0 3h-3z"></path>
+                <path d="M9.5 5.5v3h-3a1.5 1.5 0 0 0 0-3h3z"></path>
+                <path d="M9.5 18.5v-3h-3a1.5 1.5 0 0 0 0 3h3z"></path>
+                <path d="M14.5 14.5v-5a1.5 1.5 0 0 0-3 0v5a1.5 1.5 0 0 0 3 0z"></path>
+                <path d="M5.5 14.5h5a1.5 1.5 0 0 0 0-3h-5a1.5 1.5 0 0 0 0 3z"></path>
+              </svg></span>
+            <span class="tool-name">Slack</span>
           </div>
-        </div>
-        <div class="tool-cat">
-          <div class="tool-cat-name">Review &amp; Reporting</div>
-          <div class="tool-pills">
-            <span class="tool-pill">Loom</span>
-            <span class="tool-pill">Google Sheets</span>
-            <span class="tool-pill">Review Boards</span>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L2 21H22L12 2Z"></path>
+              </svg></span>
+            <span class="tool-name">Vercel</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.066.066 0 0 0-.032.027A19.96 19.96 0 0 0 1.134 16.48a.066.066 0 0 0 .02.046c3.279 2.42 6.425 3.908 9.513 4.88.07.022.146-.004.185-.062a14.28 14.28 0 0 0 1.942-3.17.068.068 0 0 0-.037-.091c-1.018-.387-2.001-.84-2.923-1.37a.068.068 0 0 1-.007-.113c.205-.154.406-.318.598-.487a.07.07 0 0 1 .074-.01c6.191 2.82 12.921 2.82 19.055.01a.069.069 0 0 1 .073.01c.19 0 .393.333.597.487a.068.068 0 0 1-.007.113c-.929.53-1.916.983-2.934 1.37a.068.068 0 0 0-.036.091 14.24 14.24 0 0 0 1.933 3.17.067.067 0 0 0 .185.062c3.102-.979 6.25-2.467 9.535-4.88a.06.06 0 0 0 .02-.046 20.005 20.005 0 0 0-2.502-12.083.064.064 0 0 0-.036-.027ZM8.02 14.075c-1.196 0-2.18-1.076-2.18-2.395 0-1.32.966-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.966 2.395-2.18 2.395Zm7.96 0c-1.195 0-2.179-1.076-2.179-2.395 0-1.32.967-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.974 2.395-2.181 2.395Z" />
+              </svg></span>
+            <span class="tool-name">Discord</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg></span>
+            <span class="tool-name">VS Code</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 5.5v3h3a1.5 1.5 0 0 0 0-3h-3z"></path>
+                <path d="M14.5 18.5v-3h3a1.5 1.5 0 0 0 0 3h-3z"></path>
+                <path d="M9.5 5.5v3h-3a1.5 1.5 0 0 0 0-3h3z"></path>
+                <path d="M9.5 18.5v-3h-3a1.5 1.5 0 0 0 0 3h3z"></path>
+                <path d="M14.5 14.5v-5a1.5 1.5 0 0 0-3 0v5a1.5 1.5 0 0 0 3 0z"></path>
+                <path d="M5.5 14.5h5a1.5 1.5 0 0 0 0-3h-5a1.5 1.5 0 0 0 0 3z"></path>
+              </svg></span>
+            <span class="tool-name">Slack</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L2 21H22L12 2Z"></path>
+              </svg></span>
+            <span class="tool-name">Vercel</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.066.066 0 0 0-.032.027A19.96 19.96 0 0 0 1.134 16.48a.066.066 0 0 0 .02.046c3.279 2.42 6.425 3.908 9.513 4.88.07.022.146-.004.185-.062a14.28 14.28 0 0 0 1.942-3.17.068.068 0 0 0-.037-.091c-1.018-.387-2.001-.84-2.923-1.37a.068.068 0 0 1-.007-.113c.205-.154.406-.318.598-.487a.07.07 0 0 1 .074-.01c6.191 2.82 12.921 2.82 19.055.01a.069.069 0 0 1 .073.01c.19 0 .393.333.597.487a.068.068 0 0 1-.007.113c-.929.53-1.916.983-2.934 1.37a.068.068 0 0 0-.036.091 14.24 14.24 0 0 0 1.933 3.17.067.067 0 0 0 .185.062c3.102-.979 6.25-2.467 9.535-4.88a.06.06 0 0 0 .02-.046 20.005 20.005 0 0 0-2.502-12.083.064.064 0 0 0-.036-.027ZM8.02 14.075c-1.196 0-2.18-1.076-2.18-2.395 0-1.32.966-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.966 2.395-2.18 2.395Zm7.96 0c-1.195 0-2.179-1.076-2.179-2.395 0-1.32.967-2.396 2.18-2.396 1.222 0 2.222 1.085 2.18 2.396 0 1.319-.974 2.395-2.181 2.395Z" />
+              </svg></span>
+            <span class="tool-name">Discord</span>
+          </div>
+          <div class="tool-box">
+            <span class="tool-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg></span>
+            <span class="tool-name">VS Code</span>
           </div>
         </div>
       </div>
@@ -455,7 +536,7 @@
   <!-- ═══════════ 5d. STUDENT OUTCOMES ═══════════ -->
   <section class="outcomes" id="outcomes">
     <div class="container">
-      <span class="section-label"><span class="tag rev">Student Outcomes</span></span>
+      <span class="section-label"><span class="section-badge rev">Student Outcomes</span></span>
       <h2 class="h2 rev d1">Not Learning. <em>Outcomes.</em></h2>
 
       <div class="outcomes-grid" style="margin-top:3rem">
@@ -547,7 +628,7 @@
   <!-- ═══════════ 6. WHO HIRES ═══════════ -->
   <section class="whohires section-sm" id="who-hires">
     <div class="container">
-      <span class="section-label"><span class="tag rev">Hiring Partners</span></span>
+      <span class="section-label"><span class="section-badge rev">Hiring Partners</span></span>
       <h2 class="h2 rev d1" style="max-width:600px">Who Hires<br>from <em>LiftUp.</em></h2>
       <p class="body-text rev d2" style="margin-top:.75rem">Our talent pool is accessed by companies looking for
         engineers who already know how to ship.</p>
@@ -567,7 +648,7 @@
   <!-- ═══════════ 7. BUILDATHON ═══════════ -->
   <section class="buildathon" id="buildathon">
     <div class="container">
-      <span class="section-label"><span class="tag tag-dk rev">Grand Buildathon</span></span>
+      <span class="section-label"><span class="section-badge section-badge-dk rev">Grand Buildathon</span></span>
       <h2 class="h2 rev d1">India's Largest<br><em>Student Buildathon.</em></h2>
       <p class="body-text rev d2">A national competition in four stages. Open to all students — cohort graduates get one
         advantage at entry.</p>
@@ -612,7 +693,7 @@
 
       <!-- Prizes -->
       <div style="margin-top:4rem">
-        <span class="section-label"><span class="tag tag-dk rev">Prizes &amp; Outcomes</span></span>
+        <span class="section-label"><span class="section-badge section-badge-dk rev">Prizes &amp; Outcomes</span></span>
         <h2 class="h2 rev d1" style="max-width:600px;color:#fff">What Winners<br><em>Take Home.</em></h2>
         <div class="prizes-grid">
           <div class="prize-card rev d1">
@@ -633,7 +714,7 @@
 
       <!-- Jury Panel -->
       <div class="jury-section">
-        <span class="section-label"><span class="tag tag-dk rev">Jury Panel</span></span>
+        <span class="section-label"><span class="section-badge section-badge-dk rev">Jury Panel</span></span>
         <h2 class="h2 rev d1" style="max-width:680px;color:#fff">Evaluated by Corporate<br>and <em>Startup Leaders.</em>
         </h2>
         <p class="body-text rev d2" style="color:rgba(255,255,255,.45);margin-top:.75rem">The jury panel for the Grand
@@ -658,7 +739,7 @@
   <!-- ═══════════ 8. FAQ ═══════════ -->
   <section class="faq" id="faq">
     <div class="container">
-      <span class="section-label"><span class="tag rev">FAQ</span></span>
+      <span class="section-label"><span class="section-badge rev">FAQ</span></span>
       <h2 class="h2 rev d1">Questions.<br><em>Answered.</em></h2>
 
       <div class="faq-tabs rev d2">

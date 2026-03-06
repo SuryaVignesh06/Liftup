@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     revEls.forEach(el => revObs.observe(el))
 
+    /* ── Section Fade In ───────────────────────────── */
+    const secObs = new IntersectionObserver(
+        (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); secObs.unobserve(e.target) } }),
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    )
+    document.querySelectorAll('section').forEach(el => secObs.observe(el))
+
     /* ── Nav scroll shadow ─────────────────────────── */
     const nav = document.querySelector('.nav') as HTMLElement
     window.addEventListener('scroll', () => {
@@ -44,4 +51,31 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isOpen) item.classList.add('open')
         })
     })
+
+    /* ── Meteors Effect ───────────────────────────── */
+    const meteorsContainer = document.getElementById('meteors-container');
+    if (meteorsContainer) {
+        const numMeteors = 30;
+        for (let i = 0; i < numMeteors; i++) {
+            const meteor = document.createElement('span');
+            meteor.className = 'meteor';
+            meteor.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+            meteor.style.top = Math.floor(Math.random() * (window.innerHeight / 2)) + 'px';
+            meteor.style.animationDelay = (Math.random() * 0.8 + 0.2) + 's';
+            meteor.style.animationDuration = Math.floor(Math.random() * 8 + 2) + 's';
+            meteorsContainer.appendChild(meteor);
+        }
+    }
+    /* ── Tools Marquee Scroll Reaction ────────────── */
+    const marqueeContainer = document.querySelector('.tools-marquee-container')
+    if (marqueeContainer) {
+        window.addEventListener('scroll', () => {
+            const rect = marqueeContainer.getBoundingClientRect()
+            const isVisible = rect.top < window.innerHeight && rect.bottom > 0
+            if (isVisible) {
+                const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height)
+                document.documentElement.style.setProperty('--marquee-scroll', scrollProgress.toString())
+            }
+        }, { passive: true })
+    }
 })
