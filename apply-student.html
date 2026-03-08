@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply as Student | LiftUp Buildathon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/forms.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <span class="registration-label">Registration Details</span>
+            <h1>STUDENT <span>APPLICATION.</span></h1>
+            <p style="color: #6B7280; font-size: 0.9rem; margin-top: 10px;">Join the LiftUp Grand Buildathon. Compete
+                with the most ambitious student builders in the country to create real solutions.</p>
+        </div>
+
+        <form id="studentForm">
+            <!-- Section 1: Basic Details -->
+            <div class="form-card">
+                <div class="section-title">
+                    Basic Details
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Enter your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" placeholder="Enter your country" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Academic Details -->
+            <div class="form-card">
+                <div class="section-title">
+                    Academic Details
+                </div>
+                <div class="form-group full-width">
+                    <label for="collegeName">College / University Name</label>
+                    <input type="text" id="collegeName" placeholder="Enter your college or university name" required>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="degree">Degree</label>
+                        <select id="degree" required>
+                            <option value="">Select Degree</option>
+                            <option value="btech">B.Tech / B.E</option>
+                            <option value="mtech">M.Tech / M.E</option>
+                            <option value="bca">BCA</option>
+                            <option value="mca">MCA</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year of Study</label>
+                        <select id="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="branch">Branch / Major</label>
+                        <input type="text" id="branch" placeholder="Enter your branch or major" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Team Information -->
+            <div class="form-card">
+                <div class="section-title">
+                    Team Information
+                </div>
+                <div class="form-group">
+                    <label>Registering As</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="regAs" value="individual">
+                            Individual</label>
+                        <label class="option-item"><input type="radio" name="regAs" value="leader"> Team Leader</label>
+                        <label class="option-item"><input type="radio" name="regAs" value="member"> Team Member</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Technical Background -->
+            <div class="form-card">
+                <div class="section-title">
+                    Technical Background
+                </div>
+                <div class="form-group">
+                    <label>Primary Skills</label>
+                    <div class="checkbox-grid">
+                        <label class="option-item"><input type="checkbox" name="skills" value="web"> Web
+                            Development</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="mobile"> Mobile
+                            Development</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="ai"> AI / Machine
+                            Learning</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="data"> Data
+                            Science</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="uiux"> UI/UX
+                            Design</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="cloud"> Cloud /
+                            DevOps</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="blockchain">
+                            Blockchain</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="cyber">
+                            Cybersecurity</label>
+                        <label class="option-item"><input type="checkbox" name="skills" value="other"> Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Years of Coding Experience</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="exp" value="beginner"> Beginner</label>
+                        <label class="option-item"><input type="radio" name="exp" value="intermediate">
+                            Intermediate</label>
+                        <label class="option-item"><input type="radio" name="exp" value="advanced"> Advanced</label>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="github">GitHub Profile (Optional)</label>
+                        <input type="url" id="github" placeholder="Enter your GitHub profile URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio / LinkedIn (Optional)</label>
+                        <input type="url" id="portfolio" placeholder="Enter your portfolio or LinkedIn URL">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Project Idea & Experience -->
+            <div class="form-card">
+                <div class="section-title">
+                    Project Idea & Experience
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Already have a Buildathon idea?</label>
+                        <div class="radio-group">
+                            <label class="option-item"><input type="radio" name="hasIdea" value="yes"> Yes</label>
+                            <label class="option-item"><input type="radio" name="hasIdea" value="no"> No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Participated in Hackathons before?</label>
+                        <div class="radio-group">
+                            <label class="option-item"><input type="radio" name="hasHack" value="yes"> Yes</label>
+                            <label class="option-item"><input type="radio" name="hasHack" value="no"> No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label>Resume Upload (PDF Optional)</label>
+                    <div
+                        style="border: 2px dashed var(--border-color); padding: 40px; text-align: center; background: #fff;">
+                        <i data-lucide="upload-cloud"
+                            style="font-size: 2rem; color: var(--accent-purple); margin-bottom: 12px;"></i>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: 500;">Click to upload or
+                            drag & drop</p>
+                        <p style="font-size: 0.65rem; color: #9CA3AF; margin-top: 4px;">PDF, max 5MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 6: Agreement -->
+            <div class="form-card">
+                <div class="section-title">
+                    Agreement
+                </div>
+                <div class="form-group">
+                    <label class="option-item" style="border: none; padding-left: 0; align-items: flex-start;">
+                        <input type="checkbox" required style="margin-top: 4px;">
+                        <span style="font-size: 0.8rem; font-weight: 500;">I confirm that all information provided is
+                            accurate and belongs to me.</span>
+                    </label>
+                    <label class="option-item"
+                        style="border: none; padding-left: 0; align-items: flex-start; margin-top: 12px;">
+                        <input type="checkbox" required>
+                        <span style="font-size: 0.8rem; font-weight: 500;">I agree to the <a href="#"
+                                style="color: var(--accent-purple); text-decoration: underline;">Buildathon rules</a>
+                            and code of conduct.</span>
+                    </label>
+                    <label class="option-item"
+                        style="border: none; padding-left: 0; align-items: flex-start; margin-top: 12px;">
+                        <input type="checkbox">
+                        <span style="font-size: 0.8rem; font-weight: 500;">I consent to receive Buildathon updates and
+                            announcements via email or WhatsApp.</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit" style="background: #111; color: #fff;">
+                SUBMIT APPLICATION <i data-lucide="arrow-right"></i>
+            </button>
+
+            <div
+                style="text-align: center; font-size: 0.65rem; color: #9CA3AF; margin-top: 16px; text-transform: uppercase; letter-spacing: 0.05em;">
+                Selected participants will receive confirmation via email.
+            </div>
+        </form>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('studentForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Student Application submitted! Good luck for the Buildathon.');
+        });
+    </script>
+</body>
+
+</html>

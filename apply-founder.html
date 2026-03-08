@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply as Founder | LiftUp Partner Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/forms.css">
+    <!-- Lucide Icons for section titles -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <span class="registration-label">Registration Details</span>
+            <h1>FOUNDER <span>APPLICATION.</span></h1>
+            <p style="color: #6B7280; font-size: 0.9rem; margin-top: 10px;">Join the LiftUp network to source
+                high-integrity remote talent.</p>
+        </div>
+
+        <form id="founderForm">
+            <!-- Section 1: Company Information -->
+            <div class="form-card">
+                <div class="section-title">
+                    Company Information
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" placeholder="Enter your company name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="websiteUrl">Website URL</label>
+                        <input type="url" id="websiteUrl" placeholder="Enter your website URL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedinProfile">LinkedIn Profile</label>
+                        <input type="url" id="linkedinProfile" placeholder="Enter your LinkedIn profile URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="founderName">Founder Name</label>
+                        <input type="text" id="founderName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation</label>
+                        <select id="designation" required>
+                            <option value="">Select Designation</option>
+                            <option value="ceo">CEO / Founder</option>
+                            <option value="cto">CTO / Technical Lead</option>
+                            <option value="hr">HR Head / Talent Lead</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="workEmail">Work Email</label>
+                        <input type="email" id="workEmail" placeholder="Enter your work email" required>
+                        <span style="font-size: 0.65rem; color: #9CA3AF; margin-top: 4px; display: block;">Use your
+                            official work domain</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Enter your city and country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="teamSize">Team Size</label>
+                        <select id="teamSize" required>
+                            <option value="">Select Range</option>
+                            <option value="1-10">1-10 Employees</option>
+                            <option value="11-50">11-50 Employees</option>
+                            <option value="51-200">51-200 Employees</option>
+                            <option value="200+">200+ Employees</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fundingStage">Funding Stage</label>
+                        <select id="fundingStage" required>
+                            <option value="">Select Stage</option>
+                            <option value="bootstrapped">Bootstrapped</option>
+                            <option value="seed">Seed</option>
+                            <option value="series-a">Series A</option>
+                            <option value="series-b">Series B+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Product & Business -->
+            <div class="form-card">
+                <div class="section-title">
+                    Product & Business
+                </div>
+                <div class="form-group full-width">
+                    <label for="productDesc">Product Description</label>
+                    <textarea id="productDesc" placeholder="Enter your product description..."></textarea>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry">
+                            <option value="">Select Industry</option>
+                            <option value="saas">SaaS / Enterprise</option>
+                            <option value="fintech">FinTech</option>
+                            <option value="edtech">EdTech</option>
+                            <option value="healthtech">HealthTech</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Model</label>
+                        <div class="radio-group">
+                            <label class="option-item"><input type="radio" name="bizModel" value="b2b"> B2B</label>
+                            <label class="option-item"><input type="radio" name="bizModel" value="b2c"> B2C</label>
+                            <label class="option-item"><input type="radio" name="bizModel" value="marketplace">
+                                Marketplace</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Do you have paying customers?</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="customers" value="scaled"> Yes,
+                            scaled</label>
+                        <label class="option-item"><input type="radio" name="customers" value="early"> Yes, early
+                            adopters</label>
+                        <label class="option-item"><input type="radio" name="customers" value="beta"> In Beta /
+                            Pre-revenue</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Hiring Intent -->
+            <div class="form-card">
+                <div class="section-title">
+                    Hiring Intent
+                </div>
+                <div class="form-group">
+                    <label>Immediate Roles</label>
+                    <div class="checkbox-grid">
+                        <label class="option-item"><input type="checkbox" name="roles" value="frontend">
+                            Frontend</label>
+                        <label class="option-item"><input type="checkbox" name="roles" value="backend"> Backend</label>
+                        <label class="option-item"><input type="checkbox" name="roles" value="fullstack"> Full
+                            Stack</label>
+                        <label class="option-item"><input type="checkbox" name="roles" value="uiux"> UI/UX
+                            Design</label>
+                        <label class="option-item"><input type="checkbox" name="roles" value="devops"> DevOps</label>
+                        <label class="option-item"><input type="checkbox" name="roles" value="pm"> Product Mgmt</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Engagement Type</label>
+                    <div class="checkbox-grid">
+                        <label class="option-item"><input type="checkbox" name="engagement" value="fulltime"> Full-time
+                            (Direct Hire)</label>
+                        <label class="option-item"><input type="checkbox" name="engagement" value="contract">
+                            Contract-to-Hire</label>
+                        <label class="option-item"><input type="checkbox" name="engagement" value="project"> Project
+                            Based</label>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="timeline">Hiring Timeline</label>
+                        <select id="timeline">
+                            <option value="immediate">Immediate (Within 2 weeks)</option>
+                            <option value="1month">Within 1 month</option>
+                            <option value="remote">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="compensation">Expected Compensation</label>
+                        <input type="text" id="compensation" placeholder="Enter your expected compensation range">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Work Mode</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="workMode" value="remote"> Remote
+                            Only</label>
+                        <label class="option-item"><input type="radio" name="workMode" value="hybrid"> Hybrid</label>
+                        <label class="option-item"><input type="radio" name="workMode" value="onsite"> On-site</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Hiring Philosophy -->
+            <div class="form-card">
+                <div class="section-title">
+                    Hiring Philosophy
+                </div>
+                <div class="form-group">
+                    <label>Top Priorities (Select Top 3)</label>
+                    <div class="checkbox-grid">
+                        <label class="option-item"><input type="checkbox" name="priority" value="speed"> Speed of
+                            Delivery</label>
+                        <label class="option-item"><input type="checkbox" name="priority" value="culture"> Culture
+                            Fit</label>
+                        <label class="option-item"><input type="checkbox" name="priority" value="technical"> Technical
+                            Depth</label>
+                        <label class="option-item"><input type="checkbox" name="priority" value="product"> Product
+                            Ownership</label>
+                        <label class="option-item"><input type="checkbox" name="priority" value="cost"> Cost
+                            Efficiency</label>
+                        <label class="option-item"><input type="checkbox" name="priority" value="experience"> Past
+                            Experience</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Hired remote global talent before?</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="remoteExp" value="yes"> Yes</label>
+                        <label class="option-item"><input type="radio" name="remoteExp" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="challenges">Biggest hiring challenge today?</label>
+                    <textarea id="challenges" placeholder="Enter your biggest hiring challenges..."></textarea>
+                </div>
+            </div>
+
+            <!-- Section 5: Agreement -->
+            <div class="form-card">
+                <div class="section-title">
+                    Agreement
+                </div>
+                <div class="form-group">
+                    <label class="option-item" style="border: none; padding-left: 0; align-items: flex-start;">
+                        <input type="checkbox" required style="margin-top: 4px;">
+                        <span>I agree to the <a href="#"
+                                style="color: var(--accent-purple); text-decoration: underline;">Terms of Service</a>
+                            and acknowledge that LiftUp's platform is designed for research-backed high integrity
+                            hiring.</span>
+                    </label>
+                    <label class="option-item"
+                        style="border: none; padding-left: 0; align-items: flex-start; margin-top: 12px;">
+                        <input type="checkbox">
+                        <span>I consent to receive high relevancy talent matching updates via the provided work
+                            email.</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Apply as Hiring Partner
+                <span class="arrow-icon">→</span>
+            </button>
+
+            <div class="small-print">
+                End-to-End Encrypted · Secure Intake
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Form submission handler
+        document.getElementById('founderForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Application submitted successfully! Our team will reach out to you within 24-48 hours.');
+            // In a real app, you'd send this data to a server
+        });
+    </script>
+</body>
+
+</html>

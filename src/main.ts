@@ -1,6 +1,23 @@
 import './style.css'
+import { LightPillar } from './LightPillar'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    /* ── Light Pillar Background (Optimized) ─────── */
+    document.querySelectorAll('.light-pillar-bg').forEach(container => {
+        new LightPillar(container as HTMLElement, {
+            topColor: '#5227FF',
+            bottomColor: '#FF9FFC',
+            intensity: 0.8,
+            rotationSpeed: 0.15,
+            pillarWidth: 3.5,
+            pillarHeight: 0.4,
+            glowAmount: 0.003,
+            noiseIntensity: 0.4,
+            pillarRotation: 15,
+            quality: 'medium'
+        })
+    })
 
     /* ── Scroll Reveal ─────────────────────────────── */
     const revEls = document.querySelectorAll('.rev')
@@ -17,10 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     document.querySelectorAll('section').forEach(el => secObs.observe(el))
 
-    /* ── Nav scroll shadow ─────────────────────────── */
+    /* ── Nav scroll shadow (Throttled) ─────────── */
     const nav = document.querySelector('.nav') as HTMLElement
+    let scrollTicking = false
     window.addEventListener('scroll', () => {
-        nav?.classList.toggle('scrolled', window.scrollY > 20)
+        if (!scrollTicking) {
+            window.requestAnimationFrame(() => {
+                nav?.classList.toggle('scrolled', window.scrollY > 20)
+                scrollTicking = false
+            })
+            scrollTicking = true
+        }
     }, { passive: true })
 
     /* ── Marquee duplicate ─────────────────────────── */
@@ -52,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    /* ── Meteors Effect ───────────────────────────── */
+    /* ── Meteors Effect (Optimized Count) ─────────── */
     const meteorsContainer = document.getElementById('meteors-container');
     if (meteorsContainer) {
-        const numMeteors = 30;
+        const numMeteors = 15; // Reduced from 30
         for (let i = 0; i < numMeteors; i++) {
             const meteor = document.createElement('span');
             meteor.className = 'meteor';
@@ -66,16 +90,54 @@ document.addEventListener('DOMContentLoaded', () => {
             meteorsContainer.appendChild(meteor);
         }
     }
-    /* ── Tools Marquee Scroll Reaction ────────────── */
+
+    /* ── Tools Marquee Scroll Reaction (Throttled & Observed) ── */
     const marqueeContainer = document.querySelector('.tools-marquee-container')
     if (marqueeContainer) {
+        let marqueeTicking = false
+        let isMarqueeVisible = false
+
+        const marqueeObs = new IntersectionObserver((entries) => {
+            isMarqueeVisible = entries[0].isIntersecting
+        }, { threshold: 0 })
+        marqueeObs.observe(marqueeContainer)
+
         window.addEventListener('scroll', () => {
-            const rect = marqueeContainer.getBoundingClientRect()
-            const isVisible = rect.top < window.innerHeight && rect.bottom > 0
-            if (isVisible) {
-                const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height)
-                document.documentElement.style.setProperty('--marquee-scroll', scrollProgress.toString())
+            if (!isMarqueeVisible) return
+            if (!marqueeTicking) {
+                window.requestAnimationFrame(() => {
+                    const rect = marqueeContainer.getBoundingClientRect()
+                    const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height)
+                    document.documentElement.style.setProperty('--marquee-scroll', scrollProgress.toString())
+                    marqueeTicking = false
+                })
+                marqueeTicking = true
             }
         }, { passive: true })
     }
+
+    /* ── Curriculum Advisory Board Interaction ────── */
+    const boardCards = document.querySelectorAll('.board-card');
+    boardCards.forEach(card => {
+        card.addEventListener('click', () => {
+            if (card.classList.contains('active')) {
+                // If clicking the active card, deactivate
+                boardCards.forEach(c => {
+                    c.classList.remove('active');
+                    c.classList.remove('blurred');
+                });
+            } else {
+                // If clicking a card (blurred or initial), activate it and blur others
+                boardCards.forEach(c => {
+                    if (c === card) {
+                        c.classList.add('active');
+                        c.classList.remove('blurred');
+                    } else {
+                        c.classList.add('blurred');
+                        c.classList.remove('active');
+                    }
+                });
+            }
+        });
+    });
 })

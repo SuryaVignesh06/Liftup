@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply as College | LiftUp Institutional Partner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/forms.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <span class="registration-label">Registration Details</span>
+            <h1>COLLEGE <span>APPLICATION.</span></h1>
+            <p style="color: #6B7280; font-size: 0.9rem; margin-top: 10px;">Empower your students with India's largest
+                AI-First Buildathon. Partner with LiftUp to bridge the industry-academia gap.</p>
+        </div>
+
+        <form id="collegeForm">
+            <!-- Section 1: Institution Details -->
+            <div class="form-card">
+                <div class="section-title">
+                    Institution Details
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="collegeName">College Name</label>
+                        <input type="text" id="collegeName" placeholder="Enter your college name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="affiliation">Affiliation / University</label>
+                        <input type="text" id="affiliation" placeholder="Enter your affiliation or university" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Institution Website</label>
+                        <input type="url" id="website" placeholder="Enter your institution website URL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Enter your city and state" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Contact Person -->
+            <div class="form-card">
+                <div class="section-title">
+                    Contact Person
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation</label>
+                        <input type="text" id="designation" placeholder="Enter your designation (e.g. TPO)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="workEmail">Official Email</label>
+                        <input type="email" id="workEmail" placeholder="Enter your official email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Partnership Intent -->
+            <div class="form-card">
+                <div class="section-title">
+                    Partnership Intent
+                </div>
+                <div class="form-group">
+                    <label>Type of Collaboration</label>
+                    <div class="checkbox-grid">
+                        <label class="option-item"><input type="checkbox" name="collab" value="workshop"> Industry
+                            Workshops</label>
+                        <label class="option-item"><input type="checkbox" name="collab" value="placement"> Placement
+                            Assistance</label>
+                        <label class="option-item"><input type="checkbox" name="collab" value="hackathon"> Hosting
+                            Hackathons</label>
+                        <label class="option-item"><input type="checkbox" name="collab" value="coe"> Center of
+                            Excellence</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="studentCount">Estimated Student Participation</label>
+                    <select id="studentCount">
+                        <option value="<100">Less than 100</option>
+                        <option value="100-500">100 - 500</option>
+                        <option value="500-1000">500 - 1000</option>
+                        <option value="1000+">1000+</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Section 4: Infrastructure -->
+            <div class="form-card">
+                <div class="section-title">
+                    Infrastructure & Facilities
+                </div>
+                <div class="form-group">
+                    <label>Available Lab Facilities</label>
+                    <textarea id="labs" placeholder="Enter your lab facilities details..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Interested in AI Excellence Center?</label>
+                    <div class="radio-group">
+                        <label class="option-item"><input type="radio" name="coeInterest" value="yes"> Yes, very
+                            interested</label>
+                        <label class="option-item"><input type="radio" name="coeInterest" value="no"> Maybe
+                            later</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Agreement -->
+            <div class="form-card">
+                <div class="section-title">
+                    Confirmation
+                </div>
+                <div class="form-group">
+                    <label class="option-item" style="border: none; padding-left: 0; align-items: flex-start;">
+                        <input type="checkbox" required style="margin-top: 4px;">
+                        <span style="font-size: 0.8rem; font-weight: 500;">I confirm that I am authorized to represent
+                            the institution in this initial inquiry.</span>
+                    </label>
+                    <label class="option-item"
+                        style="border: none; padding-left: 0; align-items: flex-start; margin-top: 12px;">
+                        <input type="checkbox" required>
+                        <span style="font-size: 0.8rem; font-weight: 500;">We agree to receive detailed partnership
+                            proposals from the LiftUp team.</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit" style="background: #111; color: #fff;">
+                SUBMIT INSTITUTIONAL INQUIRY <i data-lucide="arrow-right"></i>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('collegeForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Institutional Inquiry submitted! Our partnership team will contact you shortly.');
+        });
+    </script>
+</body>
+
+</html>
