@@ -34,6 +34,109 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     document.querySelectorAll('section').forEach(el => secObs.observe(el))
 
+    /* ── Typing Animation (program.html hero) ──────── */
+    const typingEl = document.getElementById('program-hero-heading') as HTMLElement | null
+    if (typingEl) {
+        // Parts: [text, isBreak, isEm]
+        const segments: { text: string; tag: 'text' | 'br' | 'em' }[] = [
+            { text: '15 Days to Build & Ship an', tag: 'text' },
+            { text: '', tag: 'br' },
+            { text: 'AI Product.', tag: 'em' },
+        ]
+        const cursor = document.createElement('span')
+        cursor.className = 'typing-cursor'
+        cursor.textContent = '\u00A0'
+
+        let segIdx = 0, charIdx = 0
+        const speed = 38 // ms per char
+
+        const typeNext = () => {
+            if (segIdx >= segments.length) {
+                // done — remove cursor after pause
+                setTimeout(() => cursor.remove(), 1200)
+                return
+            }
+            const seg = segments[segIdx]
+            if (seg.tag === 'br') {
+                typingEl.insertBefore(document.createElement('br'), cursor)
+                segIdx++; charIdx = 0
+                setTimeout(typeNext, speed)
+                return
+            }
+            const slice = seg.text.slice(0, charIdx + 1)
+            // Find or create the current span/em node
+            let node = typingEl.querySelector(`[data-seg="${segIdx}"]`) as HTMLElement | null
+            if (!node) {
+                node = document.createElement(seg.tag === 'em' ? 'em' : 'span')
+                node.dataset.seg = String(segIdx)
+                typingEl.insertBefore(node, cursor)
+            }
+            node.textContent = slice
+
+            if (charIdx < seg.text.length - 1) {
+                charIdx++
+                setTimeout(typeNext, speed)
+            } else {
+                segIdx++; charIdx = 0
+                setTimeout(typeNext, speed + 20)
+            }
+        }
+
+        typingEl.appendChild(cursor)
+        typingEl.classList.add('in') // ensure it's visible immediately
+        setTimeout(typeNext, 600)
+    }
+
+    /* ── Typing Animation (builders.html hero) ─────── */
+    const buildersHeading = document.getElementById('builders-hero-heading') as HTMLElement | null
+    if (buildersHeading) {
+        const bSegments: { text: string; tag: 'text' | 'br' | 'em' }[] = [
+            { text: 'Hire Builders', tag: 'text' },
+            { text: '', tag: 'br' },
+            { text: 'Who Have Already Shipped.', tag: 'em' },
+        ]
+        const bCursor = document.createElement('span')
+        bCursor.className = 'typing-cursor'
+        bCursor.textContent = '\u00A0'
+
+        let bSeg = 0, bChar = 0
+        const bSpeed = 42
+
+        const bTypeNext = () => {
+            if (bSeg >= bSegments.length) {
+                setTimeout(() => bCursor.remove(), 1200)
+                return
+            }
+            const seg = bSegments[bSeg]
+            if (seg.tag === 'br') {
+                buildersHeading.insertBefore(document.createElement('br'), bCursor)
+                bSeg++; bChar = 0
+                setTimeout(bTypeNext, bSpeed)
+                return
+            }
+            const slice = seg.text.slice(0, bChar + 1)
+            let node = buildersHeading.querySelector(`[data-bseg="${bSeg}"]`) as HTMLElement | null
+            if (!node) {
+                node = document.createElement(seg.tag === 'em' ? 'em' : 'span')
+                node.dataset.bseg = String(bSeg)
+                buildersHeading.insertBefore(node, bCursor)
+            }
+            node.textContent = slice
+            if (bChar < seg.text.length - 1) {
+                bChar++
+                setTimeout(bTypeNext, bSpeed)
+            } else {
+                bSeg++; bChar = 0
+                setTimeout(bTypeNext, bSpeed + 20)
+            }
+        }
+
+        buildersHeading.appendChild(bCursor)
+        buildersHeading.classList.add('in')
+        setTimeout(bTypeNext, 600)
+    }
+
+
     /* ── Nav scroll shadow (Throttled) ─────────── */
     const nav = document.querySelector('.nav') as HTMLElement
     let scrollTicking = false
@@ -46,6 +149,17 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollTicking = true
         }
     }, { passive: true })
+
+    /* ── Mobile Nav Hamburger ───────────────────── */
+    const hamburger = document.getElementById('nav-hamburger')
+    const mobileOverlay = document.getElementById('nav-mobile-overlay')
+    const mobileClose = document.getElementById('nav-mobile-close')
+
+    hamburger?.addEventListener('click', () => mobileOverlay?.classList.add('open'))
+    mobileClose?.addEventListener('click', () => mobileOverlay?.classList.remove('open'))
+    mobileOverlay?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileOverlay.classList.remove('open'))
+    })
 
     /* ── Marquee duplicate ─────────────────────────── */
     const track = document.querySelector('.marquee-track')

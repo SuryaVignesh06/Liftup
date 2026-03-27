@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiftUp Program | 15-Day AI Product Build Program</title>
+  <meta name="description"
+    content="How LiftUp works — cohort structure, sprint breakdown, engineering tracks, tools, program outcomes, evaluation system, and final deliverables." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav nav-solid" id="main-nav">
+    <a href="index.html" class="nav-brand">
+      Lift<span>Up</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="program.html" class="nav-active">Program</a>
+      <a href="builders.html">Builders</a>
+      <a href="buildathon.html">Buildathon</a>
+    </div>
+    <div class="nav-right">
+      <a href="apply-student.html" class="btn btn-sm">Apply Now</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <button class="nav-mobile-close" id="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="program.html">Program</a>
+    <a href="builders.html">Builders</a>
+    <a href="buildathon.html">Buildathon</a>
+    <a href="apply-student.html" class="btn">Apply Now</a>
+  </div>
+
+
+  <!-- ═══════════ PAGE HERO ═══════════ -->
+  <section class="page-hero" id="program-top">
+    <div class="container">
+      <span class="section-badge rev" style="margin-bottom: 1.5rem; display:inline-block;">The Program</span>
+      <h1 id="program-hero-heading" class="h2 rev d1" style="font-size: clamp(2.5rem,6vw,5rem); max-width: 800px;"></h1>
+      <p class="body-text rev d2" style="margin-top: 1.5rem; max-width: 680px;">
+        LiftUp India 2026 is a fully structured build + execution program. Students work in teams, run real sprints, and deploy live AI-powered products — exactly the way tech companies do it.
+      </p>
+      <div class="cta-group rev d3" style="margin-top: 2rem;">
+        <a href="apply-student.html" class="btn-anim" style="--clr: var(--text)">
+          <span class="btn-anim__icon-wrapper">
+            <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-anim__icon-svg" width="10">
+              <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+            </svg>
+            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="btn-anim__icon-svg btn-anim__icon-svg--copy">
+              <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+            </svg>
+          </span>
+          Apply as Student
+        </a>
+        <a href="apply-college.html" class="btn btn-outline">Apply as College</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ ABOUT LIFTUP ═══════════ -->
+  <section class="initiative-overview" id="about">
+    <div class="light-pillar-bg"></div>
+    <div class="container">
+      <div class="initiative-grid">
+        <div class="initiative-content rev d1">
+          <div class="section-label">
+            <span class="section-badge section-badge-blk"
+              style="color: #fff; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 4px;">About
+              LiftUp</span>
+          </div>
+          <h2 class="h2"
+            style="color: #fff; font-size: clamp(2rem, 3.5vw, 2.5rem); font-family: var(--ferron); line-height: 1.1; margin-bottom: 1rem;">
+            LiftUp India 2026
+          </h2>
+          <p class="body-text"
+            style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; max-width: 100%; font-size: 0.95rem;">
+            A 15-day intensive program where students learn to build and deploy AI-powered products using modern engineering workflows. This is not a theory course — this is a build + execution program.
+          </p>
+          <div class="initiative-details">
+            <h4 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1rem;">Core Promise:</h4>
+            <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem; line-height: 1.7; font-weight: 500;">In 15 days, you will build and deploy a real AI-powered product using structured engineering workflows.</p>
+          </div>
+          <div class="future-engineers-block" style="margin-top: 1.5rem;">
+            <p class="hero-sup"
+              style="color: rgba(255,255,255,0.4); margin: 0 0 0.8rem; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">
+              What you do:</p>
+            <div class="traits-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
+                <span style="color: var(--accent); font-size: 1rem;">✦</span> Build real AI products
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
+                <span style="color: var(--accent); font-size: 1rem;">✦</span> Work in sprint teams
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
+                <span style="color: var(--accent); font-size: 1rem;">✦</span> Deploy live MVPs
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
+                <span style="color: var(--accent); font-size: 1rem;">✦</span> Get discovered by founders
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="initiative-video rev d2">
+          <div class="video-container"
+            style="position: relative; width: 100%; aspect-ratio: 16/9; background: #111; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+            <div
+              style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+              <div
+                style="width: 60px; height: 60px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; cursor: pointer;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p class="mission-text"
+            style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-top: 1.2rem; line-height: 1.5; text-align: left; padding: 0;">
+            <span
+              style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.7rem; display: block; margin-bottom: 4px; letter-spacing: 0.05em;">Mission</span>
+            Move students from passive learning to AI-directed product execution discipline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ COHORT STRUCTURE ═══════════ -->
+  <section class="cohort-structure section" id="cohort">
+    <div class="container">
+      <span class="section-label"><span class="section-badge rev">Program Structure</span></span>
+      <h2 class="h2 rev d1">15 Days. 3 Phases.<br>One <em>Complete Build Cycle.</em></h2>
+
+      <div class="phases-grid" style="margin-top:3rem">
+        <div class="ph-card rev d1">
+          <div class="ph-num">01</div>
+          <h3>Foundations</h3>
+          <div class="ph-range">Days 1–3</div>
+          <ul class="ph-list">
+            <li>AI-assisted development basics</li>
+            <li>Product ideation + team formation</li>
+            <li>Tool setup (GitHub, VS Code, AI APIs)</li>
+            <li>PRD + basic architecture</li>
+          </ul>
+        </div>
+
+        <div class="ph-card dark rev d2">
+          <div class="ph-num">02</div>
+          <h3>Build — 3 Sprints</h3>
+          <div class="ph-range">Days 4–12</div>
+          <ul class="ph-list">
+            <li><strong style="color:var(--accent-mid)">Sprint 1 (Days 4–6):</strong> Core system, auth, DB, basic UI → Working base</li>
+            <li><strong style="color:var(--accent-mid)">Sprint 2 (Days 7–9):</strong> AI feature integration, API workflows, prompt structuring → AI-enabled feature</li>
+            <li><strong style="color:var(--accent-mid)">Sprint 3 (Days 10–12):</strong> Optimization, deployment, documentation → Live MVP</li>
+          </ul>
+        </div>
+
+        <div class="ph-card rev d3">
+          <div class="ph-num">03</div>
+          <h3>Demo & Evaluation</h3>
+          <div class="ph-range">Days 13–15</div>
+          <ul class="ph-list">
+            <li>Code review session</li>
+            <li>Demo preparation</li>
+            <li>Final presentation to panel</li>
+            <li>Performance scorecard issued</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ HOW YOU'LL WORK ═══════════ -->
+  <section class="working-model section" id="working-model">
+    <div class="container">
+      <span class="section-label" style="justify-content: center;"><span class="section-badge rev">Working Model</span></span>
+      <h2 class="h2 rev d1" style="text-align: center;">How You'll <em>Work.</em></h2>
+      <p class="body-text rev d2" style="text-align: center; margin-top: 0.75rem; max-width: 600px; margin-left: auto; margin-right: auto;">Focus: Execution discipline, not passive learning.</p>
+      <div class="working-grid rev d3">
+        <div class="work-card">
+
+          <h4>Daily Standups</h4>
+          <p>Every morning. What did you do? What will you do? What's blocking you? Real discipline starts here.</p>
+        </div>
+        <div class="work-card">
+
+          <h4>Sprint Execution</h4>
+          <p>3 focused sprints across 9 days. Each sprint has a defined output — not just tasks, actual deliverables.</p>
+        </div>
+        <div class="work-card">
+
+          <h4>Code Reviews</h4>
+          <p>Peer reviews and mentor check-ins throughout. Code quality and collaboration are evaluated, not just output.</p>
+        </div>
+        <div class="work-card">
+
+          <h4>Continuous Feedback</h4>
+          <p>Real-time feedback loops every day. Course-correct fast — the way real engineering teams do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ TRACKS ═══════════ -->
+  <section class="cohort-structure section" id="tracks">
+    <div class="container">
+      <span class="section-label"><span class="section-badge rev">Engineering Tracks</span></span>
+      <h2 class="h2 rev d1">One Program. Four <em>Engineering Tracks.</em></h2>
+      <p class="body-text rev d2" style="margin-top:.75rem">Colleges choose the track that fits their students best.
+        Every track runs inside the same 15-day sprint structure — different product focus.</p>
+
+      <div class="tracks-grid">
+        <div class="tr-card rev d1">
+          <span class="tr-badge">Track 1</span><span class="tr-best">Best for: CSE, IT</span>
+          <h3>AI Web Product Engineering</h3>
+          <p>Full-stack AI SaaS development. Students build and deploy production-ready web apps with AI at every layer — copilots, automated UI generation, and backend automation.</p>
+          <a href="track-web.html" class="explore-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="tr-card rev d2">
+          <span class="tr-badge">Track 2</span><span class="tr-best">Best for: AI / ML specialization</span>
+          <h3>AI Agent Systems</h3>
+          <p>Agents, workflows, and automation. Teams build LLM-powered features, autonomous task pipelines, multi-agent systems, and RAG applications.</p>
+          <a href="track-agent.html" class="explore-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="tr-card rev d3">
+          <span class="tr-badge">Track 3</span><span class="tr-best">Best for: MBA Tech, Product streams</span>
+          <h3>AI for Startups</h3>
+          <p>MVP building + validation. Rapid AI-assisted development, no-code/low-code hybrid systems, and SaaS product building for students who think like founders.</p>
+          <a href="track-startup.html" class="explore-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="tr-card rev d4">
+          <span class="tr-badge">Track 4</span><span class="tr-best">Best for: Data Science, Analytics</span>
+          <h3>Data & Applied AI</h3>
+          <p>Data pipelines + ML systems. Real-time analytics dashboards, vector databases, and AI microservices for students at the intersection of data and production AI.</p>
+          <a href="track-data.html" class="explore-link">
+            Explore
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ TOOLS ═══════════ -->
+  <section class="tools-section" id="tools">
+    <div class="light-pillar-bg"></div>
+    <div class="container">
+      <span class="section-label"><span class="section-badge rev">Tools Ecosystem</span></span>
+      <h2 class="h2 rev d1">The AI-First<br><em>Focused Stack.</em></h2>
+      <p class="tools-subtitle rev d2">Students use the same tools used inside modern tech companies and AI teams.</p>
+
+      <div class="tools-marquee-container rev d3">
+        <div class="t-marquee-track">
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/white" alt="GitHub"></span><span class="tool-name">GitHub</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"></span><span class="tool-name">VS Code</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="AI APIs"></span><span class="tool-name">AI APIs</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"></span><span class="tool-name">Firebase</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel"></span><span class="tool-name">Vercel</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/cursor/white" alt="Cursor AI"></span><span class="tool-name">Cursor AI</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira"></span><span class="tool-name">Jira</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/notion/white" alt="Notion"></span><span class="tool-name">Notion</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma"></span><span class="tool-name">Figma</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman"></span><span class="tool-name">Postman</span></div>
+          <!-- repeat -->
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/white" alt="GitHub"></span><span class="tool-name">GitHub</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"></span><span class="tool-name">VS Code</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="AI APIs"></span><span class="tool-name">AI APIs</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"></span><span class="tool-name">Firebase</span></div>
+          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel"></span><span class="tool-name">Vercel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ PROGRAM OUTCOMES ═══════════ -->
+  <section class="outcomes-section section" id="outcomes">
+    <div class="container">
+      <span class="section-label" style="justify-content: center;"><span class="section-badge rev">Program Outcomes</span></span>
+      <h2 class="h2 rev d1" style="text-align: center;">What You'll Walk Away <em>With.</em></h2>
+      <div class="outcomes-grid rev d2">
+        <div class="outcome-card">
+
+          <h4>Functional AI-Powered MVP</h4>
+          <p>A real product — live deployed, documented, and demo-ready. Not a college assignment.</p>
+        </div>
+        <div class="outcome-card">
+
+          <h4>Live Deployed Product</h4>
+          <p>Your product is live on the internet with a real URL in your portfolio.</p>
+        </div>
+        <div class="outcome-card">
+
+          <h4>Team Sprint Experience</h4>
+          <p>Real sprint execution in a team — standups, roles, reviews. Industry-grade workflow experience.</p>
+        </div>
+        <div class="outcome-card">
+
+          <h4>AI Tools in Real Workflows</h4>
+          <p>Hands-on use of LLMs, AI APIs, copilots, and automation tools in actual product development.</p>
+        </div>
+        <div class="outcome-card">
+
+          <h4>Demo & Technical Review</h4>
+          <p>Present your product to a panel. Walk through your code, architecture, and decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ EVALUATION SYSTEM ═══════════ -->
+  <section class="eval-section section" id="evaluation">
+    <div class="container">
+      <span class="section-label" style="justify-content: center;"><span class="section-badge rev">Evaluation System</span></span>
+      <h2 class="h2 rev d1" style="text-align: center;">How You'll Be <em>Evaluated.</em></h2>
+      <p class="body-text rev d2" style="text-align: center; margin-top: 0.75rem; max-width: 600px; margin-left:auto; margin-right:auto;">Performance is measured across 5 dimensions — exactly the way companies evaluate engineers.</p>
+      <div class="eval-bars rev d3">
+        <div class="eval-bar-item">
+          <div class="eval-bar-header">
+            <span class="eval-bar-label">Product Functionality</span>
+            <span class="eval-bar-pct">30%</span>
+          </div>
+          <div class="eval-bar-track"><div class="eval-bar-fill" style="width: 30%; background: var(--accent);"></div></div>
+        </div>
+        <div class="eval-bar-item">
+          <div class="eval-bar-header">
+            <span class="eval-bar-label">AI Integration</span>
+            <span class="eval-bar-pct">20%</span>
+          </div>
+          <div class="eval-bar-track"><div class="eval-bar-fill" style="width: 20%; background: #8b5cf6;"></div></div>
+        </div>
+        <div class="eval-bar-item">
+          <div class="eval-bar-header">
+            <span class="eval-bar-label">Execution & Teamwork</span>
+            <span class="eval-bar-pct">20%</span>
+          </div>
+          <div class="eval-bar-track"><div class="eval-bar-fill" style="width: 20%; background: #a78bfa;"></div></div>
+        </div>
+        <div class="eval-bar-item">
+          <div class="eval-bar-header">
+            <span class="eval-bar-label">Code Quality</span>
+            <span class="eval-bar-pct">15%</span>
+          </div>
+          <div class="eval-bar-track"><div class="eval-bar-fill" style="width: 15%; background: #c4b5fd;"></div></div>
+        </div>
+        <div class="eval-bar-item">
+          <div class="eval-bar-header">
+            <span class="eval-bar-label">Demo & Communication</span>
+            <span class="eval-bar-pct">15%</span>
+          </div>
+          <div class="eval-bar-track"><div class="eval-bar-fill" style="width: 15%; background: #ddd6fe;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ FINAL DELIVERABLES ═══════════ -->
+  <section class="deliverables-section section" id="deliverables">
+    <div class="container">
+      <span class="section-label" style="justify-content: center;"><span class="section-badge rev">Final Deliverables</span></span>
+      <h2 class="h2 rev d1" style="text-align: center;">What Each Team <em>Submits.</em></h2>
+      <div class="deliverables-grid rev d2">
+        <div class="deliv-card">
+          <div class="deliv-num">01</div>
+          <h4>Live Deployed Product</h4>
+          <p>A working product accessible via a real URL — not a localhost demo.</p>
+        </div>
+        <div class="deliv-card">
+          <div class="deliv-num">02</div>
+          <h4>GitHub Repository</h4>
+          <p>Clean, documented codebase with commit history, README, and proper structure.</p>
+        </div>
+        <div class="deliv-card">
+          <div class="deliv-num">03</div>
+          <h4>Product Documentation</h4>
+          <p>Architecture summary, API documentation, and setup instructions.</p>
+        </div>
+        <div class="deliv-card">
+          <div class="deliv-num">04</div>
+          <h4>Demo & Pitch</h4>
+          <p>A structured walkthrough of what was built, how, and why — presented to a review panel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ WHAT THIS IS NOT ═══════════ -->
+  <section class="not-section" id="not-this">
+    <div class="container">
+      <span class="section-label" style="justify-content: center;"><span class="section-badge rev">Transparency</span></span>
+      <h2 class="h2 rev d1" style="text-align: center;">What This Is <em style="color: #ef4444;">NOT.</em></h2>
+      <div class="not-grid rev d2">
+        <div class="not-card">
+
+          <h4>Not a Placement Guarantee</h4>
+          <p>We create visibility and opportunity. Actual outcomes depend on your performance and the decisions of hiring companies.</p>
+        </div>
+        <div class="not-card">
+
+          <h4>Not a Theory-Heavy Course</h4>
+          <p>No lectures for 8 hours. No slides to memorize. Every session is hands-on with a deliverable expected.</p>
+        </div>
+        <div class="not-card">
+
+          <h4>Not "Engineer in 15 Days"</h4>
+          <p>You won't master everything. But you will ship a real product and operate like a real team — that's the point.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ ADVISORY BOARD ═══════════ -->
+  <section class="board-section" id="board">
+    <div class="light-pillar-bg"></div>
+    <div class="container">
+      <div class="section-label" style="justify-content: center;">
+        <span class="section-badge rev">Curriculum Advisory Board</span>
+      </div>
+      <h2 class="h2 rev d1" style="text-align: center; margin-bottom: 3rem;">Shaping the <em>Future</em> of Engineering.
+      </h2>
+
+      <div class="board-grid">
+        <div class="board-card rev d1" data-id="kashif">
+          <div class="board-card-inner">
+            <div class="board-card-front">
+              <div class="board-img-wrapper">
+                <img src="/kashif copy.png" alt="Syed Kashif Alvi">
+              </div>
+              <div class="board-info">
+                <h3>Syed Kashif Alvi</h3>
+                <p class="board-headline">NIT Srinagar Alumnus | Semiconductor & Electronic Systems Specialist |
+                  Deep-Tech Researcher</p>
+              </div>
+            </div>
+            <div class="board-card-back">
+              <p class="board-desc">
+                Syed Kashif Alvi is a microelectronics engineer and deep-tech researcher with over six years of
+                experience in STEM and electronic systems innovation. He holds an M.Tech in Microelectronics from NIT
+                Srinagar and a B.Tech in Electronics from the University of Kashmir. Author of six patents in emerging
+                electronic technologies, he contributes expertise in microelectronics and industry-aligned technical
+                education.
+              </p>
+              <button class="board-close-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Go Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="cta-strip-inner">
+        <div>
+          <h3>Ready to Build?</h3>
+          <p>Apply for the next cohort or explore the Builders Network.</p>
+        </div>
+        <div class="cta-group">
+          <a href="apply-student.html" class="btn-anim btn-anim-light">
+            <span class="btn-anim__icon-wrapper">
+              <svg viewBox="0 0 14 15" fill="none" class="btn-anim__icon-svg" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path></svg>
+              <svg viewBox="0 0 14 15" fill="none" width="10" class="btn-anim__icon-svg btn-anim__icon-svg--copy" xmlns="http://www.w3.org/2000/svg"><path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path></svg>
+            </span>
+            Apply as Student
+          </a>
+          <a href="builders.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: #fff;">Top Builder Network →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

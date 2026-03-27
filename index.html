@@ -4,20 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiftUp | Experience Corporate Life Before Graduation</title>
+  <title>LiftUp India | Build & Ship AI Products in 15 Days</title>
   <meta name="description"
-    content="A 15-Day Industry-Simulated Product Development Program followed by India's Largest Student Buildathon. Built by Orionac." />
+    content="LiftUp India is a 15-day program where students build and ship AI products—and the best performers get discovered by founders. Built by Orionac." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 
 <body>
 
-  <!-- ═══════════ NAV REMOVED ═══════════ -->
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav" id="main-nav">
+    <a href="index.html" class="nav-brand">
+      Lift<span>Up</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-active">Home</a>
+      <a href="program.html">Program</a>
+      <a href="builders.html">Builders</a>
+      <a href="buildathon.html">Buildathon</a>
+    </div>
+    <div class="nav-right">
+      <a href="apply-student.html" class="btn btn-sm">Apply Now</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <button class="nav-mobile-close" id="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="program.html">Program</a>
+    <a href="builders.html">Builders</a>
+    <a href="buildathon.html">Buildathon</a>
+    <a href="apply-student.html" class="btn">Apply Now</a>
+  </div>
 
 
   <!-- ═══════════ 1. HERO ═══════════ -->
@@ -73,308 +101,144 @@
   </section>
 
 
-  <!-- ═══════════ 1b. ABOUT LIFTUP ═══════════ -->
-  <section class="initiative-overview" id="about">
-    <div class="light-pillar-bg"></div>
-    <div class="container">
-      <div class="initiative-grid">
-        <div class="initiative-content rev d1">
+  <!-- ═══════════ 2. PAIN ↔ SOLUTION (SIDE-BY-SIDE) ═══════════ -->
+  <section class="pain-solution-duo" id="pain">
+    <div class="duo-container">
+
+      <!-- LEFT: Pain -->
+      <div class="duo-col duo-pain">
+        <div class="duo-col-card">
           <div class="section-label">
-            <span class="section-badge section-badge-blk"
-              style="color: #fff; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 4px;">About
-              LiftUp</span>
+            <span class="section-badge section-badge-blk rev d1 duo-badge">Pain</span>
           </div>
-          <h2 class="h2"
-            style="color: #fff; font-size: clamp(2rem, 3.5vw, 2.5rem); font-family: var(--ferron); line-height: 1.1; margin-bottom: 1rem;">
-            LiftUp India
-          </h2>
-
-          <p class="body-text"
-            style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; max-width: 100%; font-size: 0.95rem;">
-            LiftUp India 2026 is a 1-year national AI upskilling initiative designed to shift India toward an
-            AI-first engineering mindset.
-          </p>
-
-          <div class="initiative-details">
-            <h4 style="color: var(--accent); margin-bottom: 0.8rem; font-size: 1rem;">Across 12 months:</h4>
-            <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px;">
-              <li style="display: flex; align-items: center; gap: 6px; color: #fff; font-size: 0.9rem;">
-                <span style="width: 4px; height: 4px; background: var(--accent); border-radius: 50%;"></span>
-                100 Cohorts
-              </li>
-              <li style="display: flex; align-items: center; gap: 6px; color: #fff; font-size: 0.9rem;">
-                <span style="width: 4px; height: 4px; background: var(--accent); border-radius: 50%;"></span>
-                1000+ AI-First Engineers
-              </li>
-              <li style="display: flex; align-items: center; gap: 6px; color: #fff; font-size: 0.9rem;">
-                <span style="width: 4px; height: 4px; background: var(--accent); border-radius: 50%;"></span>
-                1 Mega National Buildathon Finale
-              </li>
-            </ul>
-          </div>
-
-          <div class="future-engineers-block" style="margin-top: 1.5rem;">
-            <p class="hero-sup"
-              style="color: rgba(255,255,255,0.4); margin: 0 0 0.8rem; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">
-              The future engineer:</p>
-            <div class="traits-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-              <div
-                style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
-                <span style="color: var(--accent); font-size: 1rem;">✦</span> Thinks in systems
-              </div>
-              <div
-                style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
-                <span style="color: var(--accent); font-size: 1rem;">✦</span> Designs scalable architectures
-              </div>
-              <div
-                style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
-                <span style="color: var(--accent); font-size: 1rem;">✦</span> Directs AI systems effectively
-              </div>
-              <div
-                style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
-                <span style="color: var(--accent); font-size: 1rem;">✦</span> Validates AI output
-              </div>
-              <div
-                style="display: flex; align-items: center; gap: 8px; color: #fff; font-size: 0.85rem; line-height: 1.2;">
-                <span style="color: var(--accent); font-size: 1rem;">✦</span> Ships production systems faster
-              </div>
+          <h2 class="h2 rev d2" style="color: #fff;">Your Degree Doesn't Prepare You for <em style="color: #fff;">Day One.</em></h2>
+          <div class="duo-pain-cards">
+            <div class="pain-text-item rev d1" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">"You Cleared the Exam. You Froze in the Interview."</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">You knew the theory. But when they asked you to walk through a real product decision — there was nothing to say. No project. No experience. No answer.</p>
+            </div>
+            <div class="pain-text-item rev d2" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">"Day One at Your Job Will Not Look Like Your Classroom."</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">No assignments. No syllabus. Just a Jira board, a standup in 10 minutes, and a sprint task with your name on it.</p>
+            </div>
+            <div class="pain-text-item rev d3" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">"Your College Project Didn't Impress Them. Here's Why."</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">No version control. No documentation. No QA. Companies don't care that you built it — they care how you built it.</p>
             </div>
           </div>
-        </div>
-
-        <div class="initiative-video rev d2">
-          <div class="video-container"
-            style="position: relative; width: 100%; aspect-ratio: 16/9; background: #111; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
-            <!-- Video Placeholder / Iframe -->
-            <div
-              style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
-              <div
-                style="width: 60px; height: 60px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; cursor: pointer;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <p class="mission-text"
-            style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-top: 1.2rem; line-height: 1.5; text-align: left; padding: 0;">
-            <span
-              style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.7rem; display: block; margin-bottom: 4px; letter-spacing: 0.05em;">Mission</span>
-            Move students from manual coding to conceptual AI-directed engineering.
-          </p>
         </div>
       </div>
+
+      <!-- CENTER: Animated Arrow -->
+      <div class="duo-arrow">
+        <div class="arrow-inner">
+          <svg class="arrow-svg" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 40 L36 40 M24 24 L40 40 L24 56" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="arrow-label">The Fix</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Solution -->
+      <div class="duo-col duo-solution">
+        <div class="duo-col-card">
+          <div class="section-label">
+            <span class="section-badge section-badge-blk rev d1 duo-badge">The Solution</span>
+          </div>
+          <h2 class="h2 rev d2" style="color: #fff;">LiftUp is Not a Course. It's a <em style="color: #fff;">Build &amp; Ship Program.</em></h2>
+          <div class="duo-solution-cards">
+            <div class="sol-text-item rev d4" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">Build a Real AI Product</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">In 15 days, build and deploy a functional AI-powered MVP — not a toy project.</p>
+            </div>
+            <div class="sol-text-item rev d5" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">Sprint-Based Execution</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">Daily standups, real sprint cycles, code reviews — exactly like a tech company.</p>
+            </div>
+            <div class="sol-text-item rev d6" style="padding: 24px 0;">
+              <h3 style="font-family: var(--sans); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: .85rem; text-transform: uppercase;">Get Discovered by Founders</h3>
+              <p class="small" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); line-height: 1.65;">Top 5% enter the Builder Network and get visibility with real startups and founders.</p>
+            </div>
+          </div>
+          <a href="program.html" class="btn btn-outline-white rev d4 duo-btn">
+            See the Full Program
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bridge quote -->
+    <div class="duo-bridge">
+      <p>"You can't fix four years of college in one interview. But you can fix it in 15 days."</p>
     </div>
   </section>
 
 
-
-
-
-
-  <!-- ═══════════ 2. PAIN SECTION ═══════════ -->
-  <section class="pain" id="pain">
+  <!-- ═══════════ 3. WHAT THIS PROGRAM IS ═══════════ -->
+  <section class="what-is-section section" id="what-is">
     <div class="container">
       <div class="section-label" style="justify-content: center;">
-        <span class="section-badge section-badge-blk rev d1">Pain</span>
+        <span class="section-badge rev">What This Is</span>
       </div>
-      <h2 class="h2 rev d2">Your Degree Doesn't Prepare You<br>for <em>Day One.</em></h2>
-
-      <div class="pain-cards">
-        <div class="p-card rev d1">
-          <span class="p-card-num">01</span>
-          <h3>"You Cleared the Exam. You Froze in the Interview."</h3>
-          <p class="small">You knew the theory. But when they asked you to walk through a real product decision —
-            there was nothing to say. No project. No experience. No answer.</p>
+      <h2 class="h2 rev d1" style="text-align: center;">One Program. <em>Four Things.</em></h2>
+      <div class="what-is-pills rev d2">
+        <div class="wi-pill">
+          <span class="wi-num">01</span>
+          <span class="wi-text">AI Product Building Bootcamp</span>
         </div>
-        <div class="p-card rev d2">
-          <span class="p-card-num">02</span>
-          <h3>"Day One at Your Job Will Not Look Like Your Classroom."</h3>
-          <p class="small">No assignments. No syllabus. Just a Jira board, a standup in 10 minutes, and a sprint task
-            with your name on it. Most freshers take 3 months just to catch up.</p>
+        <div class="wi-pill">
+          <span class="wi-num">02</span>
+          <span class="wi-text">Team-Based Execution Environment</span>
         </div>
-        <div class="p-card rev d3">
-          <span class="p-card-num">03</span>
-          <h3>"Your College Project Didn't Impress Them. Here's Why."</h3>
-          <p class="small">It had no version control. No documentation. No QA. No review cycle. Companies don't care
-            that you built it — they care how you built it.</p>
+        <div class="wi-pill">
+          <span class="wi-num">03</span>
+          <span class="wi-text">Sprint-Driven Development Program</span>
         </div>
-      </div>
-
-      <div class="pain-bridge rev d4">
-        <p>"You can't fix four years of college in one interview. But you can fix it in 15 days."</p>
+        <div class="wi-pill">
+          <span class="wi-num">04</span>
+          <span class="wi-text">Structured Workflow Simulation</span>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════ 3. WHAT IS LIFTUP ═══════════ -->
-  <section class="whatis" id="liftup">
-    <div class="container">
-      <div class="whatis-inner">
-        <div class="whatis-intro">
-          <div class="section-label">
-            <span class="section-badge rev d1">The Solution</span>
-          </div>
-          <h2 class="h2 rev d2">LiftUp is Not a Course.<br>It's a <em>Corporate Simulation.</em></h2>
-          <p class="body-text rev d3" style="margin: 1.5rem auto 0; max-width: 800px;">
-            A fully simulated product development experience where students are assigned real roles, handed real problem
-            statements, and evaluated exactly the way employees are — with standups, sprints, reviews, and appraisals.
-          </p>
-        </div>
+  <!-- ═══════════ 4. WHO IS THIS FOR ═══════════ -->
+  <section class="audience-section section" id="audience" style="background: #000; color: #fff;">
+    <div class="light-pillar-bg"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-label" style="justify-content: center;">
+        <span class="section-badge rev">Who Is This For</span>
+      </div>
+      <h2 class="h2 rev d1" style="text-align: center; color: #fff;">Built for <em style="color: var(--accent);">Every Student</em><br><span style="color: #fff;">Who Wants to Build.</span></h2>
+      <div class="audience-grid rev d2">
+        <div class="audience-card">
 
-        <div class="simulation-path rev d4">
-          <div class="path-line"></div>
-          <div class="path-steps">
-            <div class="path-step">
-              <div class="path-content">
-                <h4>15-Day Simulation</h4>
-                <p>Work inside a simulated tech company with real roles, daily standups, sprint tasks, and product
-                  reviews.</p>
-              </div>
-              <div class="path-dot"></div>
-              <span class="path-num">01</span>
-            </div>
-            <div class="path-step">
-              <span class="path-num">02</span>
-              <div class="path-dot"></div>
-              <div class="path-content">
-                <h4>Build Real Products</h4>
-                <p>Develop projects using industry tools. Top performers may receive startup internship opportunities.
-                </p>
-              </div>
-            </div>
-            <div class="path-step">
-              <div class="path-content">
-                <h4>National Buildathon</h4>
-                <p>Compete in India's largest student buildathon — pitching to founders, engineers & judges.</p>
-              </div>
-              <div class="path-dot"></div>
-              <span class="path-num">03</span>
-            </div>
-          </div>
+          <h3>UG / PG Students</h3>
+          <p>All branches. CSE, IT, ECE, MBA Tech, Data Science — the track adapts to your stream.</p>
         </div>
+        <div class="audience-card">
 
-        <!-- Founder cards removed to optimize page length -->
+          <h3>Beginners to Intermediate</h3>
+          <p>No prior experience needed. Tool training starts Day 1. What matters is your drive to ship.</p>
+        </div>
+        <div class="audience-card">
+
+          <h3>Students Who Want to Build Fast</h3>
+          <p>If you want a real project in your portfolio and founder visibility — this is built for you.</p>
+        </div>
       </div>
     </div>
   </section>
 
 
-
-  <!-- ═══════════ 5a. COHORT STRUCTURE ═══════════ -->
-  <section class="cohort-structure section" id="cohort">
-    <div class="container">
-      <span class="section-label"><span class="section-badge rev">Inside the Cohort</span></span>
-      <h2 class="h2 rev d1">15 Days. 3 Phases.<br>One <em>Corporate Experience.</em></h2>
-
-      <div class="phases-grid" style="margin-top:3rem">
-        <div class="ph-card rev d1">
-          <div class="ph-num">01</div>
-          <h3>Orientation</h3>
-          <div class="ph-range">Days 1–3</div>
-          <ul class="ph-list">
-            <li>Introduction to the product brief</li>
-            <li>Role assignment — Developer / QA / Manager / Docs Lead</li>
-            <li>Team formation and tooling setup</li>
-            <li>Corporate onboarding simulation</li>
-          </ul>
-        </div>
-        <div class="ph-card dark rev d2">
-          <div class="ph-num">02</div>
-          <h3>Sprint Execution</h3>
-          <div class="ph-range">Days 4–12</div>
-          <ul class="ph-list">
-            <li>Daily standups every morning</li>
-            <li>Sprint-based task delivery</li>
-            <li>Role-based responsibilities and cross-team dependencies</li>
-            <li>Peer reviews and mid-sprint check-ins</li>
-          </ul>
-        </div>
-        <div class="ph-card rev d3">
-          <div class="ph-num">03</div>
-          <h3>Delivery &amp; Appraisal</h3>
-          <div class="ph-range">Days 13–15</div>
-          <ul class="ph-list">
-            <li>Final product presentation</li>
-            <li>Corporate-style review panel</li>
-            <li>Performance appraisal — individual and team</li>
-            <li>Feedback reports issued per participant</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ── Tracks ── -->
-      <div style="margin-top:5rem">
-        <span class="section-label"><span class="section-badge rev">Engineering Tracks</span></span>
-        <h2 class="h2 rev d1">One Program. Four <em>Engineering Tracks.</em></h2>
-        <p class="body-text rev d2" style="margin-top:.75rem">Colleges choose the track that fits their students best.
-          Every track runs inside the same 15-day corporate simulation — same sprint structure, same evaluation,
-          different product focus.</p>
-
-        <div class="tracks-grid">
-          <div class="tr-card rev d1">
-            <span class="tr-badge">Track A</span><span class="tr-best">Best for: CSE, IT</span>
-            <h3>AI-First Web Engineering</h3>
-            <p>Full-stack development with AI embedded at every layer. Students build and deploy production-ready web
-              applications using AI copilots, automated UI generation, and backend automation tools.</p>
-            <a href="track-web.html" class="explore-link">
-              Explore
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <div class="tr-card rev d2">
-            <span class="tr-badge">Track B</span><span class="tr-best">Best for: AI / ML specialization</span>
-            <h3>AI &amp; Agent Engineering</h3>
-            <p>For students going deep into AI systems. Teams build LLM-powered features, autonomous task pipelines,
-              multi-agent systems, and RAG applications that solve real business problems.</p>
-            <a href="track-agent.html" class="explore-link">
-              Explore
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <div class="tr-card rev d3">
-            <span class="tr-badge">Track C</span><span class="tr-best">Best for: MBA Tech, Product streams</span>
-            <h3>AI for Startup &amp; Product Engineering</h3>
-            <p>Rapid MVP development using AI, no-code and low-code hybrid systems, and SaaS product building. Built for
-              students who want to think like founders, not just engineers.</p>
-            <a href="track-startup.html" class="explore-link">
-              Explore
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <div class="tr-card rev d4">
-            <span class="tr-badge">Track D</span><span class="tr-best">Best for: Data Science, Analytics</span>
-            <h3>Data &amp; Applied AI Engineering</h3>
-            <p>Data pipelines, real-time analytics dashboards, vector databases, and AI microservices. For students who
-              want to work at the intersection of data and production AI systems.</p>
-            <a href="track-data.html" class="explore-link">
-              Explore
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <p class="tracks-cta rev">Not sure which track fits your institution? Our team will help you map the right track
-          to your students' stream and goals.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ 5b. REVIEW SECTION ═══════════ -->
+  <!-- ═══════════ 5. INDUSTRY VALIDATION ═══════════ -->
   <section class="review-section" id="review">
     <div class="container">
       <span class="section-badge rev">Industry Validation</span>
-      <h2 class="h2 rev d1">What <em>Hiring Managers</em> Say.</h2>
+      <h2 class="h2 rev d1">What <em>Founders</em> Say.</h2>
 
       <div class="review-card rev d2">
         <img src="/review1.jpeg" alt="Sudharsan Ananth" class="review-avatar" />
@@ -386,8 +250,7 @@
               Sudharsan Ananth
             </a>
           </h3>
-          <p style="font-size:.875rem;color:var(--text-2);font-weight:500;margin-bottom:1rem">Hiring Partner /
-            Engineering Leader</p>
+          <p style="font-size:.875rem;color:var(--text-2);font-weight:500;margin-bottom:1rem">Founder of Sparkles</p>
           <blockquote class="review-quote">
             "Rishi and the Orionac team have built a consistent talent pipeline for us, identifying and cultivating
             industry-ready candidates from emerging institutions. Their rigorous industry-readiness curriculum
@@ -400,311 +263,24 @@
   </section>
 
 
-  <!-- ═══════════ 5x. BUDGETARY ADVISORY BOARD ═══════════ -->
-  <section class="board-section" id="board">
+  <!-- ═══════════ 6. STRATEGIC INSIGHT CALLOUT ═══════════ -->
+  <section class="insight-callout" id="insight" style="background: #000; color: #fff;">
     <div class="light-pillar-bg"></div>
-    <div class="container">
-      <div class="section-label" style="justify-content: center;">
-        <span class="section-badge rev">Curriculum Advisory Board</span>
-      </div>
-      <h2 class="h2 rev d1" style="text-align: center; margin-bottom: 3rem;">Shaping the <em>Future</em> of Engineering.
-      </h2>
-
-      <div class="board-grid">
-        <!-- Kashif -->
-        <div class="board-card rev d1" data-id="kashif">
-          <div class="board-card-inner">
-            <div class="board-card-front">
-              <div class="board-img-wrapper">
-                <img src="/kashif copy.png" alt="Syed Kashif Alvi">
-              </div>
-              <div class="board-info">
-                <h3>Syed Kashif Alvi</h3>
-                <p class="board-headline">NIT Srinagar Alumnus | Semiconductor & Electronic Systems Specialist |
-                  Deep-Tech Researcher</p>
-              </div>
-            </div>
-            <div class="board-card-back">
-              <p class="board-desc">
-                Syed Kashif Alvi is a microelectronics engineer and deep-tech researcher with over six years of
-                experience in STEM and electronic systems innovation. He holds an M.Tech in Microelectronics from the
-                National Institute of Technology Srinagar and a B.Tech in Electronics and Communication Engineering from
-                the University of Kashmir. Kashif has contributed to advanced work in semiconductor systems, circuit
-                design, and electronic simulation using tools such as LTspice and modern EDA platforms, and is the
-                author of six patents in emerging electronic technologies. His work focuses on bridging research,
-                engineering design, and practical technology development, and as a Curriculum Advisory Board Member, he
-                contributes expertise in microelectronics, semiconductor engineering, and industry-aligned technical
-                education to help shape future-ready engineering curricula.
-              </p>
-              <button class="board-close-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M19 12H5M12 19l-7-7 7-7" />
-                </svg>
-                Go Back
-              </button>
-            </div>
-          </div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="insight-inner" style="background: transparent;">
+        <div class="insight-tag">Strategic Insight</div>
+        <h2 class="insight-headline" style="color: #fff;">Execution + Shipping Discipline<br><em style="color: var(--accent);">Using AI.</em></h2>
+        <p class="insight-body" style="color: rgba(255,255,255,0.8);">This is not just a course. This is a talent pipeline for AI builders. The best students don't just learn — they ship, get reviewed, and get discovered.</p>
+        <div class="insight-ctas">
+          <a href="program.html" class="btn">Explore the Program</a>
+          <a href="builders.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4); color:#fff;">Top Builder Network</a>
         </div>
-
-        <!-- Placeholder board card removed to optimize page length -->
       </div>
     </div>
   </section>
 
 
-
-  <!-- ═══════════ 5c. TOOLS ═══════════ -->
-  <section class="tools-section" id="tools">
-    <!-- Light Pillar background animation -->
-    <div class="light-pillar-bg"></div>
-    <div class="container">
-      <span class="section-label"><span class="section-badge rev">Tools Ecosystem</span></span>
-      <h2 class="h2 rev d1">20+ Industry Tools.<br>Used From <em>Day One.</em></h2>
-      <p class="tools-subtitle rev d2">Students use the same tools used inside modern tech companies.</p>
-
-      <div class="tools-marquee-container rev d3">
-        <!-- Row 1 -->
-        <div class="t-marquee-track">
-          <!-- Item 1: Jira -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
-                alt="Jira"></span>
-            <span class="tool-name">Jira</span>
-          </div>
-          <!-- Item 2: GitHub -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/github/white" alt="GitHub"></span>
-            <span class="tool-name">GitHub</span>
-          </div>
-          <!-- Item 3: Notion -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/notion/white" alt="Notion"></span>
-            <span class="tool-name">Notion</span>
-          </div>
-          <!-- Item 4: Figma -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-                alt="Figma"></span>
-            <span class="tool-name">Figma</span>
-          </div>
-          <!-- Item 5: Antigravity -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="/Antigravity.png" alt="Antigravity"></span>
-            <span class="tool-name">Antigravity</span>
-          </div>
-          <!-- Item 6: Cursor -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/cursor/white" alt="Cursor"></span>
-            <span class="tool-name">Cursor AI</span>
-          </div>
-          <!-- Item 7: Firebase -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
-                alt="Firebase"></span>
-            <span class="tool-name">Firebase</span>
-          </div>
-          <!-- Item 8: Postman -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-                alt="Postman"></span>
-            <span class="tool-name">Postman</span>
-          </div>
-          <!-- Item 9: Google AI Studio -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="AI Studio"></span>
-            <span class="tool-name">AI Studio</span>
-          </div>
-          <!-- Item 10: API -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="API"></span>
-            <span class="tool-name">API</span>
-          </div>
-
-          <!-- Repeat for smooth loop -->
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
-                alt="Jira"></span><span class="tool-name">Jira</span></div>
-          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/white"
-                alt="GitHub"></span><span class="tool-name">GitHub</span></div>
-          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/notion/white"
-                alt="Notion"></span><span class="tool-name">Notion</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-                alt="Figma"></span><span class="tool-name">Figma</span></div>
-          <div class="tool-box"><span class="tool-logo"><img src="/Antigravity.png" alt="Antigravity"></span><span
-              class="tool-name">Antigravity</span></div>
-          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/cursor/white"
-                alt="Cursor"></span><span class="tool-name">Cursor AI</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"></span><span
-              class="tool-name">Firebase</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-                alt="Postman"></span><span class="tool-name">Postman</span></div>
-        </div>
-
-
-        <!-- Row 2 -->
-        <div class="t-marquee-track rev">
-          <!-- Item 1: Slack -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg"
-                alt="Slack"></span>
-            <span class="tool-name">Slack</span>
-          </div>
-          <!-- Item 2: Vercel -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel"></span>
-            <span class="tool-name">Vercel</span>
-          </div>
-          <!-- Item 3: Discord -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discord/discord-original.svg"
-                alt="Discord"></span>
-            <span class="tool-name">Discord</span>
-          </div>
-          <!-- Item 4: VS Code -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-                alt="VS Code"></span>
-            <span class="tool-name">VS Code</span>
-          </div>
-          <!-- Item 5: Git -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"></span>
-            <span class="tool-name">Git</span>
-          </div>
-          <!-- Item 6: Google Meet -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://cdn.simpleicons.org/googlemeet" alt="Google Meet"></span>
-            <span class="tool-name">Google Meet</span>
-          </div>
-          <!-- Item 7: Cloud Hosting -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
-                alt="Cloud Hosting"></span>
-            <span class="tool-name">Cloud</span>
-          </div>
-          <!-- Item 8: Docker -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                alt="Docker"></span>
-            <span class="tool-name">Docker</span>
-          </div>
-          <!-- Item 9: AWS -->
-          <div class="tool-box">
-            <span class="tool-logo"><img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"
-                alt="AWS"></span>
-            <span class="tool-name">AWS</span>
-          </div>
-          <!-- Item 10: Kubernetes -->
-          <div class="tool-box">
-            <span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg"
-                alt="Kubernetes"></span>
-            <span class="tool-name">Kubernetes</span>
-          </div>
-
-          <!-- Repeat for smooth loop -->
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg"
-                alt="Slack"></span><span class="tool-name">Slack</span></div>
-          <div class="tool-box"><span class="tool-logo"><img src="https://cdn.simpleicons.org/vercel/white"
-                alt="Vercel"></span><span class="tool-name">Vercel</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discord/discord-original.svg"
-                alt="Discord"></span><span class="tool-name">Discord</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-                alt="VS Code"></span><span class="tool-name">VS Code</span></div>
-          <div class="tool-box"><span class="tool-logo"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                alt="Git"></span><span class="tool-name">Git</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ 5d. STUDENT OUTCOMES (UPDATED) ═══════════ -->
-  <section class="outcomes" id="outcomes">
-    <div class="container">
-      <span class="section-label"><span class="section-badge rev">From Degree to Industry Readiness</span></span>
-      <h2 class="h2 rev d1" style="max-width: 800px;">From Degree to<br><em>Industry Readiness.</em></h2>
-      <p class="body-text rev d2" style="margin-top: 1rem; max-width: 800px;">
-        Your Degree Builds the Foundation. Industry Requires the Next Step.
-      </p>
-
-      <div class="pain-cards" style="margin-top: 3rem;">
-        <div class="p-card rev d1">
-          <span class="p-card-num">01</span>
-          <h3 style="color: #111;">You learned the concepts. Interviews ask for real-world thinking.</h3>
-          <p class="small" style="color: #444;">You understand the theory. But when interviewers ask how you would make a real product decision, it can be difficult without hands-on exposure. Practical experience bridges that gap.</p>
-        </div>
-        <div class="p-card rev d2">
-          <span class="p-card-num">02</span>
-          <h3 style="color: #111;">Your first day at work feels different from the classroom.</h3>
-          <p class="small" style="color: #444;">Instead of assignments and exams, you work with tools, teams, and deadlines. Understanding workflows like sprint planning, collaboration, and product tasks helps students transition smoothly into real industry environments.</p>
-        </div>
-        <div class="p-card rev d3">
-          <span class="p-card-num">03</span>
-          <h3 style="color: #111;">Industry looks beyond just building a project.</h3>
-          <p class="small" style="color: #444;">Companies value not only what you build, but how you build it — documentation, version control, testing, and collaboration. Learning these practices makes projects truly industry-ready.</p>
-        </div>
-      </div>
-
-      <div class="pain-bridge rev d4" style="margin-top: 3rem;">
-        <p style="color: #333;">"Turn four years of learning into day-one industry readiness in 15 days."</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ 6. WHO HIRES ═══════════ -->
-  <section class="whohires section-sm" id="who-hires">
-    <div class="container">
-      <span class="section-label"><span class="section-badge rev">Hiring Partners</span></span>
-      <h2 class="h2 rev d1" style="max-width:600px">Who Hires<br>from <em>LiftUp.</em></h2>
-      <p class="body-text rev d2" style="margin-top:.75rem">Our talent pool is accessed by companies looking for
-        engineers who already know how to ship.</p>
-      <div class="logos-row rev d3" style="justify-content: center;">
-        <div class="logo-pill" style="font-size: 1.1rem; padding: 12px 30px;">To Be Announced Soon</div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ 7. BUILDATHON ═══════════ -->
-  <section class="buildathon" id="buildathon">
-    <div class="light-pillar-bg"></div>
-    <div class="container" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-      <span class="section-label" style="justify-content: center;"><span class="section-badge section-badge-dk rev">Grand Buildathon</span></span>
-      <h2 class="h2 rev d1" style="color: #fff;">India's Largest<br><em style="color: #fff;">Student Buildathon.</em></h2>
-      <p class="body-text rev d2" style="margin: 1.5rem auto 2.5rem; max-width: 800px; color: rgba(255,255,255,0.8);">
-        A national competition in four stages. Open to all students — cohort graduates get one advantage at entry.
-      </p>
-      
-      <a href="buildathon.html" class="btn btn-outline rev d3" style="display: inline-flex; padding: 0.8rem 2rem; border-color: rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.05);">
-        Explore the Buildathon Details
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="margin-left: 8px;">
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
-      </a>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ 8. FAQ ═══════════ -->
+  <!-- ═══════════ 7. FAQ ═══════════ -->
   <section class="faq" id="faq">
     <div class="container">
       <span class="section-label"><span class="section-badge rev">FAQ</span></span>
@@ -727,19 +303,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>No. LiftUp is designed for students at all levels. What matters is your willingness to show up, take
-                ownership, and deliver — not your existing skill level.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">What year of college should I be in?<div class="faq-icon"><svg viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>LiftUp is open to all UG and PG students. 2nd and 3rd year students tend to benefit the most, but final
-                year students are equally welcome.</p>
+              <p>No. LiftUp is designed for students at all levels. Tool onboarding happens on Day 1. What matters is your willingness to show up and deliver.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -749,19 +313,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>You'll work on 2 structured product projects with a real team, real roles, and real sprint cycles.
-                These are resume-ready, documented projects — not college assignments.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Will I get a certificate?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>Yes. Every student who completes the program receives an official Orionac Industry Simulation
-                Certificate. Top performers receive additional recognition.</p>
+              <p>A functional AI-powered MVP — deployed live. You'll go through 3 sprints: core system, AI feature integration, and deployment + documentation. It's a resume-ready, real product.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -771,31 +323,17 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>An internship puts you in one role in one company. LiftUp simulates an entire product team — you
-                experience multiple roles, real delivery pressure, and corporate-style appraisal in 15 days.</p>
+              <p>An internship puts you in one role in one company. LiftUp simulates a full product team — you experience sprint-based delivery, real roles, and a demo evaluation in 15 days.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">What happens after the cohort?<div class="faq-icon"><svg viewBox="0 0 24 24"
+            <button class="faq-q">What happens after the program?<div class="faq-icon"><svg viewBox="0 0 24 24"
                   fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="12" y1="5" x2="12" y2="19" />
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>You enter the LiftUp Startup Talent Pool. Top performers get access to paid internship opportunities,
-                startup referrals, and founder network visibility. You also get priority review in Phase 1 of the Grand
-                Buildathon.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Is there any prior tool knowledge required?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>No. Tool onboarding happens on Day 1. You'll be trained on 20+ industry tools as part of the program
-                itself.</p>
+              <p>Top 5% of performers enter the <strong>LiftUp Top Builder Network</strong> — a curated pool visible to founders and startups. You also get priority access to the National Buildathon.</p>
             </div>
           </div>
         </div>
@@ -811,19 +349,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>15 days, conducted entirely on campus. Orionac sends 2 on-site trainers and provides 1 senior
-                simulation manager for online oversight.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">What infrastructure does our institution need to provide?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>A computer lab, seminar hall, student laptops, a writing or smart board, and stable internet. That's it
-                — Orionac handles everything else.</p>
+              <p>15 days, conducted entirely on campus. Orionac sends on-site trainers and provides oversight throughout.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -833,42 +359,17 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>30 to 40 students per cohort for the best simulation experience.</p>
+              <p>We start with 25–30 students (3–5 teams). Scale only after quality is proven. 30–40 is ideal for the best simulation experience.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">Can the program be customized for our department or stream?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <button class="faq-q">Can the program be customized for our stream?<div class="faq-icon"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="12" y1="5" x2="12" y2="19" />
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>Yes. The curriculum is dynamically designed and can be adapted to your institution's academic stream
-                and specialization.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">How does this benefit our placement record?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>Students leave with documented, resume-ready projects, corporate workflow experience, and entry into
-                the LiftUp Startup Talent Pool — all of which directly strengthen placement readiness before final year.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Who is the senior simulation manager and what is their role?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>Dr. K. C. Ganesh, Senior Manager R&amp;D at AVTEC Limited with a PhD from NIT Trichy, conducts
-                corporate-style review meetings, assigns strategic deliverables, and evaluates students the way a senior
-                industry professional would.</p>
+              <p>Yes. The curriculum is dynamically designed and can be adapted to your institution's stream. We have 4 engineering tracks to choose from.</p>
             </div>
           </div>
         </div>
@@ -878,59 +379,33 @@
       <div id="faq-founders" class="faq-pane">
         <div class="faq-items">
           <div class="faq-item">
-            <button class="faq-q">What kind of students come out of the LiftUp cohort?<div class="faq-icon"><svg
+            <button class="faq-q">What kind of students come out of LiftUp?<div class="faq-icon"><svg
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="12" y1="5" x2="12" y2="19" />
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>Students who have completed sprint-based product development, used 20+ industry tools, worked in
-                defined roles, and been evaluated through corporate-style appraisals. They arrive trained, not raw.</p>
+              <p>Students who have built and deployed real AI products, worked in sprint teams, and been evaluated with a performance scorecard. They arrive trained — not raw.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">What does it mean to be part of the hiring talent pool?<div class="faq-icon"><svg
+            <button class="faq-q">How do I access the Top Builder Network?<div class="faq-icon"><svg
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="12" y1="5" x2="12" y2="19" />
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>You get early access to shortlisted students before they apply anywhere else. No job board, no
-                middleman — direct pipeline from LiftUp to your team.</p>
+              <p>Visit the <a href="builders.html" style="color:var(--accent); font-weight:600;">Builders page</a>. You can explore real projects, evaluate performance scorecards, and connect directly with top performers.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">What is the commitment involved for founders?<div class="faq-icon"><svg
+            <button class="faq-q">Can we participate in the Buildathon as a jury member?<div class="faq-icon"><svg
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="12" y1="5" x2="12" y2="19" />
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>At the entry level, just a letter of commitment and your logo on the platform. You review profiles only
-                when we send them — no obligation to hire.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Can we participate as a jury member in the Buildathon?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>Yes. Founders on the jury panel get direct visibility into the top-performing student teams, first-look
-                access to the products built, and recognition as part of India's largest AI-first student buildathon.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">How many students are in each cohort talent pool?<div class="faq-icon"><svg
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg></div></button>
-            <div class="faq-a">
-              <p>Each cohort runs 30 to 40 students. You receive only the shortlisted top performers — pre-filtered by
-                performance, not just participation.</p>
+              <p>Yes. Founders on the jury panel get direct visibility into top-performing student teams and first-look access to the products built.</p>
             </div>
           </div>
         </div>
@@ -946,8 +421,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>Cohort dates are announced on a rolling basis. Apply or register your interest and you'll be notified
-                as soon as the next batch is confirmed.</p>
+              <p>Cohort dates are announced on a rolling basis. Apply or register your interest and you'll be notified as soon as the next batch is confirmed.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -957,8 +431,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>Pricing is shared during the application and onboarding process based on institution and cohort type.
-                Reach out to support@orionac.in for details.</p>
+              <p>Pricing is shared during the application process based on institution and cohort type. Reach out to support@orionac.in for details.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -968,8 +441,7 @@
                   <line x1="5" y1="12" x2="19" y2="12" />
                 </svg></div></button>
             <div class="faq-a">
-              <p>No. Orionac is a technology and research company. LiftUp is a product built from inside a real tech
-                environment — not designed by educators or based on a standard curriculum.</p>
+              <p>No. Orionac is a technology and research company. LiftUp is a product built from inside a real tech environment — not designed by educators.</p>
             </div>
           </div>
         </div>
@@ -977,8 +449,6 @@
     </div>
   </section>
 
-
-  <!-- ═══════════ 9. FOOTER REMOVED ═══════════ -->
 
   <script type="module" src="/src/main.ts"></script>
 </body>
