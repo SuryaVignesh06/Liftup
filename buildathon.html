@@ -12,18 +12,39 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
-  <!-- Add a simple navigation back button for the subpage -->
-  <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
-    <a href="index.html" style="color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; font-weight: 600; font-size: 0.9rem;">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="margin-right: 8px;">
-        <path d="M19 12H5M12 19l-7-7 7-7" />
-      </svg>
-      Back to Home
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav nav-solid" id="main-nav">
+    <a href="index.html" class="nav-brand">
+      Lift<span>Up</span>
     </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="builders.html">Builders</a>
+      <a href="buildathon.html" class="nav-active">Buildathon</a>
+    </div>
+    <div class="nav-right">
+      <a href="apply-student.html" class="btn btn-sm">Apply Now</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <button class="nav-mobile-close" id="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="program.html">Program</a>
+    <a href="builders.html">Builders</a>
+    <a href="buildathon.html">Buildathon</a>
+    <a href="apply-student.html" class="btn">Apply Now</a>
   </div>
 
   <!-- ═══════════ 7. BUILDATHON ═══════════ -->
@@ -110,7 +131,7 @@
     </div>
   </section>
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="./src/main.ts"></script>
 </body>
 
 </html>
